@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+
+# Notebooks & data artifacts
+*.ipynb_checkpoints/
+feature-engineering.ipynb
+
+# Env & local config
+.env
+.env.*
+.vscode/
+.idea/
+
+# Git
+.git/
+.gitignore
+
+# Caches
+.dist/
+build/
+.cache/

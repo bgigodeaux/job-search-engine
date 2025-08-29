@@ -1,0 +1,28 @@
+[
+    {
+        "job_title": "Software Engineer",
+        "job_description": "Responsible for developing and maintaining software applications.",
+        "budget": {
+            "min": 70000,
+            "max": 90000,
+            "currency": "USD"
+        },
+        "location": "San Francisco, CA",
+        "company_name": "Tech Corp",
+        "employment_type": "Full-time",
+        "required_skills": [ "JavaScript", "Python", "Java" ]
+    },
+    {
+        "job_title": "Data Engineer",
+        "job_description": "Design and optimize ETL pipelines with Spark, SQL, and Python in a cloud environment.",
+        "budget": {
+            "min": 100000,
+            "max": 130000,
+            "currency": "USD"
+        },
+        "location": "New York, NY",
+        "company_name": "DataWorks",
+        "employment_type": "Full-time",
+        "required_skills": [ "Spark", "SQL", "Python", "AWS" ]
+    }
+]

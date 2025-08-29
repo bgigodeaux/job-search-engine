@@ -1,0 +1,348 @@
+[
+    {
+        "first_name": "Alice",
+        "last_name": "Johnson",
+        "birthdate": "1990-02-10",
+        "age": 34,
+        "email": "alice.johnson@example.com",
+        "phone": "+11234567890",
+        "address": "123 Main St, San Francisco, USA",
+        "skills": [ "Python", "Flask", "Docker" ],
+        "experiences": [
+            {
+                "company": "TechOne",
+                "role": "Software Engineer",
+                "start_date": "2015-06-01",
+                "end_date": "2018-12-31",
+                "description": "Developed APIs with Flask and Python."
+            },
+            {
+                "company": "InnovateX",
+                "role": "Senior Backend Engineer",
+                "start_date": "2019-01-01",
+                "end_date": "2022-12-31",
+                "description": "Led microservices migration to Docker."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University A",
+                "degree": "B.Sc. in Computer Science",
+                "year_of_graduation": 2012,
+                "description": "..."
+            },
+            {
+                "institution": "University B",
+                "degree": "M.Sc. in Software Engineering",
+                "year_of_graduation": 2015,
+                "description": "..."
+            }
+        ]
+    },
+    {
+        "first_name": "Bob",
+        "last_name": "Smith",
+        "birthdate": "1988-07-22",
+        "age": 36,
+        "email": "bob.smith@example.com",
+        "phone": "+19876543210",
+        "address": "45 Broadway, New York, USA",
+        "skills": [ "JavaScript", "React", "Node.js" ],
+        "experiences": [
+            {
+                "company": "Webify",
+                "role": "Frontend Developer",
+                "start_date": "2013-01-01",
+                "end_date": "2016-06-30",
+                "description": "Built SPAs with React."
+            },
+            {
+                "company": "CloudApps",
+                "role": "Fullstack Developer",
+                "start_date": "2016-07-01",
+                "end_date": "2021-12-31",
+                "description": "Worked on Node.js + React fullstack apps."
+            }
+        ],
+        "education": [
+            {
+                "institution": "College X",
+                "degree": "B.Sc. in Information Technology",
+                "year_of_graduation": 2010,
+                "description": "..."
+            }
+        ]
+    },
+    {
+        "first_name": "Clara",
+        "last_name": "Nguyen",
+        "birthdate": "1992-05-15",
+        "age": 32,
+        "email": "clara.nguyen@example.com",
+        "phone": "+14151234567",
+        "address": "56 Market St, San Francisco, USA",
+        "skills": [ "Java", "Spring Boot", "AWS" ],
+        "experiences": [
+            {
+                "company": "EnterpriseSoft",
+                "role": "Java Developer",
+                "start_date": "2014-01-01",
+                "end_date": "2018-12-31",
+                "description": "Developed enterprise backends with Java and Spring."
+            },
+            {
+                "company": "CloudNova",
+                "role": "Senior Java Engineer",
+                "start_date": "2019-01-01",
+                "end_date": "2022-12-31",
+                "description": "Deployed Java microservices to AWS."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University Z",
+                "degree": "B.Sc. in Computer Science",
+                "year_of_graduation": 2014,
+                "description": "..."
+            }
+        ]
+    },
+    {
+        "first_name": "David",
+        "last_name": "Lee",
+        "birthdate": "1991-11-12",
+        "age": 33,
+        "email": "david.lee@example.com",
+        "phone": "+13105551234",
+        "address": "100 King St, Toronto, Canada",
+        "skills": [ "Python", "TensorFlow", "NLP" ],
+        "experiences": [
+            {
+                "company": "AIWorks",
+                "role": "Machine Learning Engineer",
+                "start_date": "2016-01-01",
+                "end_date": "2020-12-31",
+                "description": "Built NLP models with TensorFlow."
+            },
+            {
+                "company": "DeepTech",
+                "role": "Senior ML Engineer",
+                "start_date": "2021-01-01",
+                "end_date": "2023-12-31",
+                "description": "Led ML research in NLP."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Tech University",
+                "degree": "M.Sc. in AI",
+                "year_of_graduation": 2016,
+                "description": "..."
+            }
+        ]
+    },
+    {
+        "first_name": "Eva",
+        "last_name": "Martinez",
+        "birthdate": "1995-03-28",
+        "age": 29,
+        "email": "eva.martinez@example.com",
+        "phone": "+16175559999",
+        "address": "200 Queen St, London, UK",
+        "skills": [ "SQL", "ETL", "Python" ],
+        "experiences": [
+            {
+                "company": "DataCorp",
+                "role": "Data Engineer",
+                "start_date": "2017-01-01",
+                "end_date": "2020-12-31",
+                "description": "Built ETL pipelines with SQL and Python."
+            },
+            {
+                "company": "AnalyticsPro",
+                "role": "Senior Data Engineer",
+                "start_date": "2021-01-01",
+                "end_date": "2023-12-31",
+                "description": "Optimized big data pipelines."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of London",
+                "degree": "B.Sc. in Data Science",
+                "year_of_graduation": 2017,
+                "description": "..."
+            }
+        ]
+    },
+    {
+        "first_name": "Frank",
+        "last_name": "Brown",
+        "birthdate": "1987-08-10",
+        "age": 37,
+        "email": "frank.brown@example.com",
+        "phone": "+12025558888",
+        "address": "300 Pine St, Seattle, USA",
+        "skills": [ "C++", "Linux", "Embedded Systems" ],
+        "experiences": [
+            {
+                "company": "EmbeddedCo",
+                "role": "Embedded Engineer",
+                "start_date": "2010-01-01",
+                "end_date": "2015-12-31",
+                "description": "Developed embedded C++ systems."
+            },
+            {
+                "company": "AutoTech",
+                "role": "Senior Embedded Engineer",
+                "start_date": "2016-01-01",
+                "end_date": "2022-12-31",
+                "description": "Worked on automotive embedded solutions."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Tech Institute",
+                "degree": "B.Eng. in Electrical Engineering",
+                "year_of_graduation": 2010,
+                "description": "..."
+            }
+        ]
+    },
+    {
+        "first_name": "Grace",
+        "last_name": "Kim",
+        "birthdate": "1994-09-05",
+        "age": 30,
+        "email": "grace.kim@example.com",
+        "phone": "+14165557777",
+        "address": "Toronto, Canada",
+        "skills": [ "JavaScript", "React", "TypeScript" ],
+        "experiences": [
+            {
+                "company": "FrontendX",
+                "role": "Frontend Developer",
+                "start_date": "2016-01-01",
+                "end_date": "2019-12-31",
+                "description": "Built UI with React and TypeScript."
+            },
+            {
+                "company": "WebTech",
+                "role": "Senior Frontend Developer",
+                "start_date": "2020-01-01",
+                "end_date": "2023-12-31",
+                "description": "Led frontend projects with React."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of Toronto",
+                "degree": "B.Sc. in Computer Science",
+                "year_of_graduation": 2016,
+                "description": "..."
+            }
+        ]
+    },
+    {
+        "first_name": "Henry",
+        "last_name": "White",
+        "birthdate": "1990-04-17",
+        "age": 34,
+        "email": "henry.white@example.com",
+        "phone": "+442012345678",
+        "address": "Manchester, UK",
+        "skills": [ "Python", "Django", "PostgreSQL" ],
+        "experiences": [
+            {
+                "company": "WebApps",
+                "role": "Backend Developer",
+                "start_date": "2012-01-01",
+                "end_date": "2016-12-31",
+                "description": "Built web apps with Django + PostgreSQL."
+            },
+            {
+                "company": "FinServe",
+                "role": "Senior Backend Developer",
+                "start_date": "2017-01-01",
+                "end_date": "2022-12-31",
+                "description": "Maintained financial backend systems."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of Manchester",
+                "degree": "B.Sc. in Computer Science",
+                "year_of_graduation": 2012,
+                "description": "..."
+            }
+        ]
+    },
+    {
+        "first_name": "Isabella",
+        "last_name": "Lopez",
+        "birthdate": "1996-06-21",
+        "age": 28,
+        "email": "isabella.lopez@example.com",
+        "phone": "+521555555555",
+        "address": "Mexico City, MX",
+        "skills": [ "Python", "FastAPI", "Docker" ],
+        "experiences": [
+            {
+                "company": "APISoft",
+                "role": "Software Engineer",
+                "start_date": "2018-01-01",
+                "end_date": "2021-12-31",
+                "description": "Developed APIs with FastAPI."
+            },
+            {
+                "company": "DevOpsMX",
+                "role": "DevOps Engineer",
+                "start_date": "2022-01-01",
+                "end_date": "2023-12-31",
+                "description": "Containerized apps with Docker."
+            }
+        ],
+        "education": [
+            {
+                "institution": "UNAM",
+                "degree": "B.Sc. in Computer Engineering",
+                "year_of_graduation": 2018,
+                "description": "..."
+            }
+        ]
+    },
+    {
+        "first_name": "Jack",
+        "last_name": "Müller",
+        "birthdate": "1989-12-03",
+        "age": 35,
+        "email": "jack.muller@example.com",
+        "phone": "+491234567890",
+        "address": "Berlin, DE",
+        "skills": [ "Go", "Kubernetes", "Cloud" ],
+        "experiences": [
+            {
+                "company": "CloudOps",
+                "role": "Cloud Engineer",
+                "start_date": "2014-01-01",
+                "end_date": "2018-12-31",
+                "description": "Worked on cloud-native infrastructure."
+            },
+            {
+                "company": "SaaSify",
+                "role": "Senior Cloud Engineer",
+                "start_date": "2019-01-01",
+                "end_date": "2023-12-31",
+                "description": "Managed Kubernetes clusters in production."
+            }
+        ],
+        "education": [
+            {
+                "institution": "TU Berlin",
+                "degree": "M.Sc. in Computer Science",
+                "year_of_graduation": 2014,
+                "description": "..."
+            }
+        ]
+    }
+]

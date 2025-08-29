@@ -1,0 +1,44 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: candidate-api
+    # In dev you can override the command to enable reload
+    command: uvicorn api.main:app --host 0.0.0.0 --port 8000 --reload
+    working_dir: /app/app
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount only the app dir for faster reloads; keeps venv inside image
+      - ./app:/app/app
+      # If you want to persist data separately, you can mount just the data dir:
+      # - ./app/data:/app/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+  ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: candidate-ui
+    # Streamlit entry (runs inside /app/app; script path is relative to there)
+    command: streamlit run ui/streamlit_app.py --server.port=8501 --server.address=0.0.0.0
+    working_dir: /app/app
+    env_file:
+      - .env
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./app:/app/app
+    depends_on:
+      - api
+    restart: unless-stopped

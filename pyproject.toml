@@ -1,0 +1,39 @@
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.poetry]
+name = "manatal-reco"
+version = "0.1.0"
+description = "Candidate recommendation engine (FastAPI + Streamlit)"
+authors = ["You <you@example.com>"]
+packages = [{ include = "app" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+# Core app deps
+fastapi = "^0.110"
+uvicorn = "^0.27"
+python-dotenv = "^1.0"
+pandas = "^2.2"
+streamlit = "^1.36"
+mistralai = "^1.9.9"
+langchain-mistralai = "^0.2.11"
+langchain = "^0.3.27"
+scikit-learn = "^1.7.1"
+
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2"
+pytest-cov = "^4.1"
+mypy = "^1.10"
+
+[build-system]
+requires = ["poetry-core>=1.7"]
+build-backend = "poetry.core.masonry.api"
