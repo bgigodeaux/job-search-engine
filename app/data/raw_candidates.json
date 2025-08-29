@@ -1,348 +1,752 @@
 [
     {
-        "first_name": "Alice",
-        "last_name": "Johnson",
-        "birthdate": "1990-02-10",
+        "id": 1,
+        "first_name": "Olivia",
+        "last_name": "Chen",
+        "birthdate": "1991-08-15",
         "age": 34,
-        "email": "alice.johnson@example.com",
-        "phone": "+11234567890",
-        "address": "123 Main St, San Francisco, USA",
-        "skills": [ "Python", "Flask", "Docker" ],
+        "email": "olivia.chen@example.com",
+        "phone": "+14155550101",
+        "address": "789 Tech Way, Mountain View, CA, USA",
+        "domain": "Tech",
+        "skills": [ "Python", "Go", "Kubernetes", "Docker", "AWS", "Microservices", "PostgreSQL", "CI/CD" ],
         "experiences": [
             {
-                "company": "TechOne",
+                "company": "NextGen Solutions",
                 "role": "Software Engineer",
-                "start_date": "2015-06-01",
-                "end_date": "2018-12-31",
-                "description": "Developed APIs with Flask and Python."
+                "start_date": "2014-07-01",
+                "end_date": "2017-09-30",
+                "description": "Developed and maintained backend services for a high-traffic web application using Python and Django. Contributed to database design and optimization, reducing query times by 15%. Participated in a full agile development lifecycle, including design, implementation, and testing."
             },
             {
-                "company": "InnovateX",
+                "company": "QuantumLeap Tech",
                 "role": "Senior Backend Engineer",
-                "start_date": "2019-01-01",
-                "end_date": "2022-12-31",
-                "description": "Led microservices migration to Docker."
+                "start_date": "2017-10-01",
+                "end_date": "2025-08-29",
+                "description": "Led the architecture and development of a new microservices-based platform in Go, improving system scalability and resilience. Championed the adoption of Docker and Kubernetes for containerization and orchestration, which decreased deployment times by 40%. Mentored junior engineers on best practices for coding and system design."
             }
         ],
         "education": [
             {
-                "institution": "University A",
-                "degree": "B.Sc. in Computer Science",
-                "year_of_graduation": 2012,
-                "description": "..."
-            },
-            {
-                "institution": "University B",
-                "degree": "M.Sc. in Software Engineering",
-                "year_of_graduation": 2015,
-                "description": "..."
-            }
-        ]
-    },
-    {
-        "first_name": "Bob",
-        "last_name": "Smith",
-        "birthdate": "1988-07-22",
-        "age": 36,
-        "email": "bob.smith@example.com",
-        "phone": "+19876543210",
-        "address": "45 Broadway, New York, USA",
-        "skills": [ "JavaScript", "React", "Node.js" ],
-        "experiences": [
-            {
-                "company": "Webify",
-                "role": "Frontend Developer",
-                "start_date": "2013-01-01",
-                "end_date": "2016-06-30",
-                "description": "Built SPAs with React."
-            },
-            {
-                "company": "CloudApps",
-                "role": "Fullstack Developer",
-                "start_date": "2016-07-01",
-                "end_date": "2021-12-31",
-                "description": "Worked on Node.js + React fullstack apps."
-            }
-        ],
-        "education": [
-            {
-                "institution": "College X",
-                "degree": "B.Sc. in Information Technology",
-                "year_of_graduation": 2010,
-                "description": "..."
-            }
-        ]
-    },
-    {
-        "first_name": "Clara",
-        "last_name": "Nguyen",
-        "birthdate": "1992-05-15",
-        "age": 32,
-        "email": "clara.nguyen@example.com",
-        "phone": "+14151234567",
-        "address": "56 Market St, San Francisco, USA",
-        "skills": [ "Java", "Spring Boot", "AWS" ],
-        "experiences": [
-            {
-                "company": "EnterpriseSoft",
-                "role": "Java Developer",
-                "start_date": "2014-01-01",
-                "end_date": "2018-12-31",
-                "description": "Developed enterprise backends with Java and Spring."
-            },
-            {
-                "company": "CloudNova",
-                "role": "Senior Java Engineer",
-                "start_date": "2019-01-01",
-                "end_date": "2022-12-31",
-                "description": "Deployed Java microservices to AWS."
-            }
-        ],
-        "education": [
-            {
-                "institution": "University Z",
-                "degree": "B.Sc. in Computer Science",
+                "institution": "Stanford University",
+                "degree": "M.S. in Computer Science",
                 "year_of_graduation": 2014,
-                "description": "..."
+                "description": "Specialized in distributed systems and artificial intelligence. Thesis project involved creating a scalable real-time data processing pipeline."
+            },
+            {
+                "institution": "University of California, Berkeley",
+                "degree": "B.S. in Electrical Engineering and Computer Sciences",
+                "year_of_graduation": 2012,
+                "description": "Graduated with High Honors. Member of the university's competitive programming team."
             }
         ]
     },
     {
-        "first_name": "David",
-        "last_name": "Lee",
-        "birthdate": "1991-11-12",
-        "age": 33,
-        "email": "david.lee@example.com",
-        "phone": "+13105551234",
-        "address": "100 King St, Toronto, Canada",
-        "skills": [ "Python", "TensorFlow", "NLP" ],
+        "id": 2,
+        "first_name": "Benjamin",
+        "last_name": "Carter",
+        "birthdate": "1989-05-20",
+        "age": 36,
+        "email": "ben.carter@example.com",
+        "phone": "+12125550102",
+        "address": "456 Market St, New York, NY, USA",
+        "domain": "Product",
+        "skills": [ "Product Strategy", "Roadmap Planning", "Agile Methodologies", "Jira", "User Research", "A/B Testing", "Data Analysis", "Figma" ],
         "experiences": [
             {
-                "company": "AIWorks",
-                "role": "Machine Learning Engineer",
-                "start_date": "2016-01-01",
-                "end_date": "2020-12-31",
-                "description": "Built NLP models with TensorFlow."
+                "company": "BrightIdeas Inc.",
+                "role": "Associate Product Manager",
+                "start_date": "2013-06-15",
+                "end_date": "2016-08-31",
+                "description": "Assisted in managing the product lifecycle for a B2C mobile application. Conducted market research and competitive analysis to identify user needs and feature gaps. Wrote detailed product specifications and user stories for the engineering team."
             },
             {
-                "company": "DeepTech",
-                "role": "Senior ML Engineer",
-                "start_date": "2021-01-01",
-                "end_date": "2023-12-31",
-                "description": "Led ML research in NLP."
+                "company": "InnovateForward",
+                "role": "Senior Product Manager",
+                "start_date": "2016-09-01",
+                "end_date": "2025-08-29",
+                "description": "Own the product vision, strategy, and roadmap for a suite of SaaS analytics tools. Led a cross-functional team of 10 to launch three major products, resulting in a 30% year-over-year revenue growth. Utilized A/B testing and user feedback to drive a 25% increase in user engagement."
             }
         ],
         "education": [
             {
-                "institution": "Tech University",
-                "degree": "M.Sc. in AI",
-                "year_of_graduation": 2016,
-                "description": "..."
-            }
-        ]
-    },
-    {
-        "first_name": "Eva",
-        "last_name": "Martinez",
-        "birthdate": "1995-03-28",
-        "age": 29,
-        "email": "eva.martinez@example.com",
-        "phone": "+16175559999",
-        "address": "200 Queen St, London, UK",
-        "skills": [ "SQL", "ETL", "Python" ],
-        "experiences": [
-            {
-                "company": "DataCorp",
-                "role": "Data Engineer",
-                "start_date": "2017-01-01",
-                "end_date": "2020-12-31",
-                "description": "Built ETL pipelines with SQL and Python."
+                "institution": "Columbia University",
+                "degree": "MBA",
+                "year_of_graduation": 2013,
+                "description": "Concentration in Marketing and Entrepreneurship. Co-founder of the university's Tech & Innovation Club."
             },
             {
-                "company": "AnalyticsPro",
-                "role": "Senior Data Engineer",
-                "start_date": "2021-01-01",
-                "end_date": "2023-12-31",
-                "description": "Optimized big data pipelines."
-            }
-        ],
-        "education": [
-            {
-                "institution": "University of London",
-                "degree": "B.Sc. in Data Science",
-                "year_of_graduation": 2017,
-                "description": "..."
+                "institution": "New York University",
+                "degree": "B.A. in Economics",
+                "year_of_graduation": 2011,
+                "description": "Graduated Magna Cum Laude. Published an undergraduate thesis on consumer behavior in digital markets."
             }
         ]
     },
     {
-        "first_name": "Frank",
-        "last_name": "Brown",
-        "birthdate": "1987-08-10",
-        "age": 37,
-        "email": "frank.brown@example.com",
-        "phone": "+12025558888",
-        "address": "300 Pine St, Seattle, USA",
-        "skills": [ "C++", "Linux", "Embedded Systems" ],
-        "experiences": [
-            {
-                "company": "EmbeddedCo",
-                "role": "Embedded Engineer",
-                "start_date": "2010-01-01",
-                "end_date": "2015-12-31",
-                "description": "Developed embedded C++ systems."
-            },
-            {
-                "company": "AutoTech",
-                "role": "Senior Embedded Engineer",
-                "start_date": "2016-01-01",
-                "end_date": "2022-12-31",
-                "description": "Worked on automotive embedded solutions."
-            }
-        ],
-        "education": [
-            {
-                "institution": "Tech Institute",
-                "degree": "B.Eng. in Electrical Engineering",
-                "year_of_graduation": 2010,
-                "description": "..."
-            }
-        ]
-    },
-    {
-        "first_name": "Grace",
-        "last_name": "Kim",
-        "birthdate": "1994-09-05",
+        "id": 3,
+        "first_name": "Chloe",
+        "last_name": "Rodriguez",
+        "birthdate": "1994-11-02",
         "age": 30,
-        "email": "grace.kim@example.com",
-        "phone": "+14165557777",
-        "address": "Toronto, Canada",
-        "skills": [ "JavaScript", "React", "TypeScript" ],
+        "email": "chloe.rodriguez@example.com",
+        "phone": "+13125550103",
+        "address": "101 Startup Ave, Austin, TX, USA",
+        "domain": "Sales",
+        "skills": [ "Enterprise Sales", "Salesforce", "Lead Generation", "Negotiation", "Account Management", "SaaS", "HubSpot" ],
         "experiences": [
             {
-                "company": "FrontendX",
-                "role": "Frontend Developer",
-                "start_date": "2016-01-01",
-                "end_date": "2019-12-31",
-                "description": "Built UI with React and TypeScript."
+                "company": "ConnectSphere",
+                "role": "Sales Development Representative",
+                "start_date": "2017-02-01",
+                "end_date": "2019-03-31",
+                "description": "Prospected and qualified new leads for the enterprise sales team through cold calling, email campaigns, and social media outreach. Consistently exceeded monthly quota for qualified meetings by 20%. Maintained meticulous records in Salesforce."
             },
             {
-                "company": "WebTech",
-                "role": "Senior Frontend Developer",
-                "start_date": "2020-01-01",
-                "end_date": "2023-12-31",
-                "description": "Led frontend projects with React."
+                "company": "ScaleUp Solutions",
+                "role": "Account Executive",
+                "start_date": "2019-04-01",
+                "end_date": "2025-08-29",
+                "description": "Manage the full sales cycle for a portfolio of enterprise clients in the fintech sector. Achieved 150% of annual quota in 2024 by closing over $2M in new business. Built and maintained strong client relationships, leading to a 95% renewal rate."
             }
         ],
         "education": [
+            {
+                "institution": "University of Texas at Austin",
+                "degree": "B.B.A. in Marketing",
+                "year_of_graduation": 2016,
+                "description": "Minor in Communications. Vice President of the collegiate chapter of the American Marketing Association."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "first_name": "Daniel",
+        "last_name": "Patel",
+        "birthdate": "1993-02-25",
+        "age": 32,
+        "email": "daniel.patel@example.com",
+        "phone": "+442079460104",
+        "address": "221B Baker St, London, UK",
+        "domain": "Tech",
+        "skills": [ "JavaScript", "TypeScript", "React", "Node.js", "GraphQL", "Webpack", "Jest" ],
+        "experiences": [
+            {
+                "company": "WebWeavers Ltd.",
+                "role": "Frontend Developer",
+                "start_date": "2016-01-10",
+                "end_date": "2019-06-30",
+                "description": "Developed responsive and interactive user interfaces for e-commerce websites using React and Redux. Collaborated closely with UI/UX designers to translate wireframes into high-quality code. Implemented a component library that was adopted across the company."
+            },
+            {
+                "company": "Fintech Innovations",
+                "role": "Senior Full-Stack Engineer",
+                "start_date": "2019-07-01",
+                "end_date": "2025-08-29",
+                "description": "Architected and built a new customer-facing dashboard using TypeScript, React, and Node.js with a GraphQL API. Led the frontend team in adopting modern testing practices with Jest and Cypress, increasing code coverage by 50%. Optimized application performance, resulting in a 60% reduction in load times."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Imperial College London",
+                "degree": "M.Eng. in Computing (Software Engineering)",
+                "year_of_graduation": 2015,
+                "description": "First-Class Honours. Final year project focused on building a secure, real-time chat application."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "first_name": "Sophia",
+        "last_name": "Dubois",
+        "birthdate": "1995-07-12",
+        "age": 30,
+        "email": "sophia.dubois@example.com",
+        "phone": "+33123456789",
+        "address": "15 Rue de la Paix, Paris, France",
+        "domain": "Product",
+        "skills": [ "UX Research", "UI Design", "Figma", "Sketch", "Adobe XD", "Wireframing", "Prototyping", "User-Centered Design" ],
+        "experiences": [
+            {
+                "company": "Creative Minds Studio",
+                "role": "Junior UX/UI Designer",
+                "start_date": "2018-09-01",
+                "end_date": "2021-02-28",
+                "description": "Created wireframes, mockups, and prototypes for various client websites and mobile apps. Conducted usability testing sessions and synthesized findings into actionable design improvements. Assisted senior designers in developing design systems and style guides."
+            },
+            {
+                "company": "Visionary Apps",
+                "role": "Lead Product Designer",
+                "start_date": "2021-03-01",
+                "end_date": "2025-08-29",
+                "description": "Led the end-to-end design process for a new productivity app, from initial user research to final high-fidelity UI. The app was featured on the App Store and achieved over 1 million downloads in its first year. Manages a small team of designers, providing mentorship and creative direction."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Gobelins, l'école de l'image",
+                "degree": "Master's in Interactive Digital Experiences",
+                "year_of_graduation": 2018,
+                "description": "Focused on the intersection of design, technology, and user experience. Her thesis project won the 'Best Design' award at the annual student showcase."
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "first_name": "Liam",
+        "last_name": "O'Sullivan",
+        "birthdate": "1988-01-30",
+        "age": 37,
+        "email": "liam.osullivan@example.com",
+        "phone": "+35319876543",
+        "address": "42 Silicon Docks, Dublin, Ireland",
+        "domain": "Sales",
+        "skills": [ "Sales Management", "Team Leadership", "Sales Strategy", "Forecasting", "CRM Administration", "Salesforce", "Key Account Development" ],
+        "experiences": [
+            {
+                "company": "Global Connect Corp",
+                "role": "Account Executive",
+                "start_date": "2012-08-01",
+                "end_date": "2017-06-30",
+                "description": "Managed and grew a territory of 50+ enterprise accounts in the EMEA region. Consistently ranked as a top 5 performer, achieving over 120% of quota for four consecutive years. Specialized in selling complex cloud infrastructure solutions."
+            },
+            {
+                "company": "HyperGrowth SaaS",
+                "role": "Regional Sales Manager",
+                "start_date": "2017-07-01",
+                "end_date": "2025-08-29",
+                "description": "Lead a team of 12 account executives covering Northern Europe. Grew the region's annual recurring revenue (ARR) from $5M to $25M in 5 years. Implemented a new sales training program that decreased ramp-up time for new hires by 30%."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Trinity College Dublin",
+                "degree": "B.A. in Business, Economic and Social Studies",
+                "year_of_graduation": 2011,
+                "description": "Graduated with honors. Captain of the university debate team."
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "first_name": "Aisha",
+        "last_name": "Khan",
+        "birthdate": "1992-04-18",
+        "age": 33,
+        "email": "aisha.khan@example.com",
+        "phone": "+16475550105",
+        "address": "300 Tech Tower, Toronto, ON, Canada",
+        "domain": "Tech",
+        "skills": [ "Python", "Pandas", "Scikit-learn", "TensorFlow", "SQL", "Machine Learning", "Data Visualization", "Natural Language Processing" ],
+        "experiences": [
+            {
+                "company": "Data Insights Co.",
+                "role": "Data Analyst",
+                "start_date": "2015-06-01",
+                "end_date": "2018-08-31",
+                "description": "Cleaned, processed, and analyzed large datasets to extract actionable business insights. Created dashboards and reports using Tableau to visualize key performance indicators for stakeholders. Wrote complex SQL queries to support ad-hoc analysis."
+            },
+            {
+                "company": "AI Innovations",
+                "role": "Machine Learning Scientist",
+                "start_date": "2018-09-01",
+                "end_date": "2025-08-29",
+                "description": "Researched and developed machine learning models for recommendation engines and fraud detection. Deployed a new NLP model that improved customer support ticket classification accuracy by 35%. Published findings at a major AI conference."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of Waterloo",
+                "degree": "Master of Data Science and Artificial Intelligence",
+                "year_of_graduation": 2015,
+                "description": "Graduated at the top of the class. Research focused on deep learning techniques for time-series analysis."
+            },
             {
                 "institution": "University of Toronto",
-                "degree": "B.Sc. in Computer Science",
-                "year_of_graduation": 2016,
-                "description": "..."
+                "degree": "B.S. in Statistics and Computer Science",
+                "year_of_graduation": 2013,
+                "description": "Scholarship recipient for academic excellence."
             }
         ]
     },
     {
-        "first_name": "Henry",
-        "last_name": "White",
-        "birthdate": "1990-04-17",
+        "id": 8,
+        "first_name": "Mateo",
+        "last_name": "Garcia",
+        "birthdate": "1990-09-09",
         "age": 34,
-        "email": "henry.white@example.com",
-        "phone": "+442012345678",
-        "address": "Manchester, UK",
-        "skills": [ "Python", "Django", "PostgreSQL" ],
+        "email": "mateo.garcia@example.com",
+        "phone": "+34912345678",
+        "address": "Gran Vía 28, Madrid, Spain",
+        "domain": "Product",
+        "skills": [ "Agile", "Scrum", "Product Backlog Management", "Jira", "Stakeholder Management", "User Story Mapping", "Certified Scrum Product Owner (CSPO)" ],
         "experiences": [
             {
-                "company": "WebApps",
-                "role": "Backend Developer",
-                "start_date": "2012-01-01",
-                "end_date": "2016-12-31",
-                "description": "Built web apps with Django + PostgreSQL."
+                "company": "Digital Solutions SL",
+                "role": "Business Analyst",
+                "start_date": "2013-02-01",
+                "end_date": "2016-04-30",
+                "description": "Acted as a liaison between business stakeholders and the development team. Gathered requirements, created process flow diagrams, and translated business needs into technical specifications. Facilitated user acceptance testing (UAT)."
             },
             {
-                "company": "FinServe",
-                "role": "Senior Backend Developer",
-                "start_date": "2017-01-01",
-                "end_date": "2022-12-31",
-                "description": "Maintained financial backend systems."
+                "company": "AgileSoft Factory",
+                "role": "Product Owner",
+                "start_date": "2016-05-01",
+                "end_date": "2025-08-29",
+                "description": "Owns and prioritizes the product backlog for two scrum teams developing a project management software. Works closely with stakeholders to define acceptance criteria and ensure alignment with business goals. Led the team to increase velocity by 20% through improved backlog refinement processes."
             }
         ],
         "education": [
             {
-                "institution": "University of Manchester",
-                "degree": "B.Sc. in Computer Science",
+                "institution": "IE Business School",
+                "degree": "Master in Management",
                 "year_of_graduation": 2012,
-                "description": "..."
+                "description": "Specialization in Digital Business and Innovation."
+            },
+            {
+                "institution": "Universidad Politécnica de Madrid",
+                "degree": "B.Eng. in Software Engineering",
+                "year_of_graduation": 2011,
+                "description": ""
             }
         ]
     },
     {
-        "first_name": "Isabella",
-        "last_name": "Lopez",
-        "birthdate": "1996-06-21",
-        "age": 28,
-        "email": "isabella.lopez@example.com",
-        "phone": "+521555555555",
-        "address": "Mexico City, MX",
-        "skills": [ "Python", "FastAPI", "Docker" ],
+        "id": 9,
+        "first_name": "Hana",
+        "last_name": "Tanaka",
+        "birthdate": "1996-03-14",
+        "age": 29,
+        "email": "hana.tanaka@example.com",
+        "phone": "+81345678901",
+        "address": "Shibuya Crossing, Tokyo, Japan",
+        "domain": "Sales",
+        "skills": [ "Customer Success", "Account Management", "Zendesk", "Gainsight", "Client Onboarding", "Retention Strategies", "Upselling" ],
         "experiences": [
             {
-                "company": "APISoft",
-                "role": "Software Engineer",
-                "start_date": "2018-01-01",
-                "end_date": "2021-12-31",
-                "description": "Developed APIs with FastAPI."
+                "company": "Global SaaS Co.",
+                "role": "Customer Support Specialist",
+                "start_date": "2019-07-01",
+                "end_date": "2022-01-31",
+                "description": "Provided technical and product support to a global customer base via email, phone, and chat. Maintained a 98% customer satisfaction (CSAT) score. Created and updated knowledge base articles to empower users to self-serve."
             },
             {
-                "company": "DevOpsMX",
-                "role": "DevOps Engineer",
-                "start_date": "2022-01-01",
-                "end_date": "2023-12-31",
-                "description": "Containerized apps with Docker."
+                "company": "PartnerPro",
+                "role": "Customer Success Manager",
+                "start_date": "2022-02-01",
+                "end_date": "2025-08-29",
+                "description": "Manages a portfolio of 40 strategic accounts, ensuring they achieve their desired outcomes while using our product. Drove product adoption through proactive engagement and training, resulting in a 10% reduction in churn. Identified upsell opportunities that contributed to a 15% increase in expansion revenue."
             }
         ],
         "education": [
             {
-                "institution": "UNAM",
-                "degree": "B.Sc. in Computer Engineering",
-                "year_of_graduation": 2018,
-                "description": "..."
+                "institution": "Waseda University",
+                "degree": "B.A. in International Liberal Studies",
+                "year_of_graduation": 2019,
+                "description": "Studied abroad for one year at the University of Southern California. Fluent in Japanese and English."
             }
         ]
     },
     {
-        "first_name": "Jack",
-        "last_name": "Müller",
-        "birthdate": "1989-12-03",
-        "age": 35,
-        "email": "jack.muller@example.com",
-        "phone": "+491234567890",
-        "address": "Berlin, DE",
-        "skills": [ "Go", "Kubernetes", "Cloud" ],
+        "id": 10,
+        "first_name": "Leo",
+        "last_name": "Schmidt",
+        "birthdate": "1991-12-01",
+        "age": 33,
+        "email": "leo.schmidt@example.com",
+        "phone": "+49301234567",
+        "address": "Alexanderplatz 1, Berlin, Germany",
+        "domain": "Tech",
+        "skills": [ "DevOps", "CI/CD", "Jenkins", "GitLab CI", "Terraform", "Ansible", "GCP", "Prometheus", "Grafana" ],
         "experiences": [
             {
-                "company": "CloudOps",
-                "role": "Cloud Engineer",
-                "start_date": "2014-01-01",
-                "end_date": "2018-12-31",
-                "description": "Worked on cloud-native infrastructure."
+                "company": "SysAdmin Heroes",
+                "role": "Systems Administrator",
+                "start_date": "2015-02-15",
+                "end_date": "2018-05-31",
+                "description": "Managed Linux servers in a data center environment. Handled system patching, backups, and user administration. Wrote shell scripts to automate repetitive administrative tasks, saving approximately 10 hours per week."
             },
             {
-                "company": "SaaSify",
-                "role": "Senior Cloud Engineer",
-                "start_date": "2019-01-01",
-                "end_date": "2023-12-31",
-                "description": "Managed Kubernetes clusters in production."
+                "company": "CloudNative GmbH",
+                "role": "Senior DevOps Engineer",
+                "start_date": "2018-06-01",
+                "end_date": "2025-08-29",
+                "description": "Designed and implemented CI/CD pipelines for a microservices architecture, reducing manual deployment efforts to zero. Managed infrastructure-as-code using Terraform on Google Cloud Platform. Built a comprehensive monitoring and alerting system with Prometheus and Grafana, improving system uptime to 99.99%."
             }
         ],
         "education": [
             {
-                "institution": "TU Berlin",
-                "degree": "M.Sc. in Computer Science",
+                "institution": "Technical University of Munich",
+                "degree": "B.S. in Informatics",
                 "year_of_graduation": 2014,
-                "description": "..."
+                "description": "Thesis on the performance comparison of different container orchestration systems."
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "first_name": "Isabelle",
+        "last_name": "Leclerc",
+        "birthdate": "1992-06-27",
+        "age": 33,
+        "email": "isabelle.leclerc@example.com",
+        "phone": "+15145550106",
+        "address": "75 Sherbrooke St, Montreal, QC, Canada",
+        "domain": "Product",
+        "skills": [ "Technical Product Management", "API Design", "System Architecture", "SQL", "Agile", "Roadmap Prioritization", "Cloud Services" ],
+        "experiences": [
+            {
+                "company": "CodeCrafters Inc.",
+                "role": "Software Developer",
+                "start_date": "2014-08-01",
+                "end_date": "2018-10-31",
+                "description": "Worked as a full-stack developer on a B2B platform, using Ruby on Rails and Angular. Gained a deep understanding of the product's technical architecture and limitations. Often served as the bridge between the product and engineering teams."
+            },
+            {
+                "company": "Platform Pioneers",
+                "role": "Technical Product Manager",
+                "start_date": "2018-11-01",
+                "end_date": "2025-08-29",
+                "description": "Manages the product roadmap for the company's core API and developer platform. Defines technical requirements and works closely with architects to ensure solutions are scalable and secure. Led the launch of a new API version that saw a 200% increase in adoption by third-party developers."
+            }
+        ],
+        "education": [
+            {
+                "institution": "McGill University",
+                "degree": "B.Eng. in Software Engineering",
+                "year_of_graduation": 2014,
+                "description": "Graduated with Distinction. President of the McGill AI Society."
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "first_name": "Carlos",
+        "last_name": "Silva",
+        "birthdate": "1993-10-11",
+        "age": 31,
+        "email": "carlos.silva@example.com",
+        "phone": "+5511987654321",
+        "address": "Avenida Paulista 1000, São Paulo, Brazil",
+        "domain": "Sales",
+        "skills": [ "Solutions Engineering", "Pre-Sales", "Technical Demonstrations", "Proof of Concept (PoC)", "API Integration", "Python", "AWS" ],
+        "experiences": [
+            {
+                "company": "DevTools Brazil",
+                "role": "Technical Support Engineer",
+                "start_date": "2016-03-01",
+                "end_date": "2019-08-31",
+                "description": "Provided Tier 3 technical support for a suite of developer tools. Troubleshot complex customer issues related to API integrations and software bugs. Developed a reputation for resolving the most challenging support cases."
+            },
+            {
+                "company": "CloudCorp LatAm",
+                "role": "Solutions Engineer",
+                "start_date": "2019-09-01",
+                "end_date": "2025-08-29",
+                "description": "Serves as the primary technical resource for the enterprise sales team. Delivers compelling product demonstrations and builds custom proof-of-concept solutions for prospective clients. Instrumental in closing a landmark $1.5M deal by designing a bespoke integration plan."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Universidade de São Paulo (USP)",
+                "degree": "B.S. in Computer Science",
+                "year_of_graduation": 2015,
+                "description": "Research assistant in the Distributed Systems Lab during his final year."
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "first_name": "Priya",
+        "last_name": "Sharma",
+        "birthdate": "1996-01-08",
+        "age": 29,
+        "email": "priya.sharma@example.com",
+        "phone": "+918012345678",
+        "address": "1 Tech Park, Bangalore, India",
+        "domain": "Tech",
+        "skills": [ "Android", "Kotlin", "Java", "Jetpack Compose", "MVVM", "REST APIs", "Mobile UI/UX" ],
+        "experiences": [
+            {
+                "company": "Appify Mobile",
+                "role": "Android Developer",
+                "start_date": "2018-07-01",
+                "end_date": "2021-09-30",
+                "description": "Developed features for a popular social networking app with over 10 million active users. Worked extensively with Kotlin, Android SDK, and RESTful APIs. Participated in code reviews and helped maintain a high standard of code quality."
+            },
+            {
+                "company": "SuperApp India",
+                "role": "Senior Android Engineer",
+                "start_date": "2021-10-01",
+                "end_date": "2025-08-29",
+                "description": "Leads the development of the payments module within the main application. Spearheaded the migration from XML layouts to Jetpack Compose, improving developer productivity and UI performance. Mentors other engineers on the team and advocates for mobile development best practices."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Indian Institute of Technology Bombay (IIT Bombay)",
+                "degree": "B.Tech. in Computer Science and Engineering",
+                "year_of_graduation": 2018,
+                "description": "Member of the mobile development club, where she built and published several personal apps on the Play Store."
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "first_name": "David",
+        "last_name": "Goldberg",
+        "birthdate": "1987-04-05",
+        "age": 38,
+        "email": "david.goldberg@example.com",
+        "phone": "+972541234567",
+        "address": "Rothschild Blvd 22, Tel Aviv, Israel",
+        "domain": "Product",
+        "skills": [ "Growth Hacking", "Product-Led Growth (PLG)", "A/B Testing", "Data Analysis", "SQL", "Amplitude", "Marketing Automation" ],
+        "experiences": [
+            {
+                "company": "AdTech Wizards",
+                "role": "Digital Marketing Manager",
+                "start_date": "2011-06-01",
+                "end_date": "2015-12-31",
+                "description": "Managed paid acquisition campaigns across Google Ads and social media platforms. Optimized landing pages and ad copy to improve conversion rates. Analyzed campaign performance and reported on key metrics to stakeholders."
+            },
+            {
+                "company": "ViralGrowth Inc.",
+                "role": "Growth Product Manager",
+                "start_date": "2016-01-01",
+                "end_date": "2025-08-29",
+                "description": "Leads a dedicated growth squad focused on improving user activation, engagement, and retention. Runs a high-tempo experimentation program, launching multiple A/B tests per week. Led an initiative to revamp the user onboarding flow, resulting in a 20% increase in 7-day retention."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Technion - Israel Institute of Technology",
+                "degree": "B.Sc. in Industrial Engineering and Management",
+                "year_of_graduation": 2011,
+                "description": "Specialized in information systems and marketing."
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "first_name": "Wei",
+        "last_name": "Zhang",
+        "birthdate": "1994-08-21",
+        "age": 31,
+        "email": "wei.zhang@example.com",
+        "phone": "+861012345678",
+        "address": "Zhongguancun, Beijing, China",
+        "domain": "Tech",
+        "skills": [ "ETL", "Apache Spark", "Hadoop", "Airflow", "SQL", "Python", "Data Warehousing", "AWS Redshift" ],
+        "experiences": [
+            {
+                "company": "DataFlow Analytics",
+                "role": "Junior Data Engineer",
+                "start_date": "2017-07-15",
+                "end_date": "2020-08-31",
+                "description": "Developed and maintained ETL jobs to load data from various sources into a centralized data warehouse. Wrote and optimized complex SQL queries for data transformation and analysis. Monitored data pipelines to ensure data quality and availability."
+            },
+            {
+                "company": "BigData Corp",
+                "role": "Data Engineer II",
+                "start_date": "2020-09-01",
+                "end_date": "2025-08-29",
+                "description": "Architects and builds scalable big data pipelines using Apache Spark and Airflow. Designed and implemented a new data lake on AWS S3, enabling more efficient data processing and analytics for the data science team. Optimized Spark jobs to reduce processing time by over 50% for critical pipelines."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Tsinghua University",
+                "degree": "M.S. in Computer Science and Technology",
+                "year_of_graduation": 2017,
+                "description": "Research focused on distributed data processing frameworks."
+            },
+            {
+                "institution": "Peking University",
+                "degree": "B.S. in Software Engineering",
+                "year_of_graduation": 2015,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "first_name": "Fatima",
+        "last_name": "Al-Jamil",
+        "birthdate": "1990-03-03",
+        "age": 35,
+        "email": "fatima.aljamil@example.com",
+        "phone": "+971501234567",
+        "address": "Downtown Dubai, Dubai, UAE",
+        "domain": "Sales",
+        "skills": [ "Channel Sales", "Partner Management", "Business Development", "Go-to-Market Strategy", "Contract Negotiation", "Salesforce" ],
+        "experiences": [
+            {
+                "company": "Tech Distributors ME",
+                "role": "Partner Account Manager",
+                "start_date": "2013-05-01",
+                "end_date": "2018-07-31",
+                "description": "Managed relationships with a portfolio of 20+ value-added resellers (VARs) and distributors in the Gulf region. Provided training and sales enablement to partners. Coordinated joint marketing campaigns to drive lead generation."
+            },
+            {
+                "company": "Global Software Alliance",
+                "role": "Director of Channel Sales, MENA",
+                "start_date": "2018-08-01",
+                "end_date": "2025-08-29",
+                "description": "Defines and executes the channel sales strategy for the Middle East and North Africa region. Recruited and onboarded 30 new strategic partners, increasing channel-driven revenue by 300% over four years. Leads a team of partner managers to achieve regional sales targets."
+            }
+        ],
+        "education": [
+            {
+                "institution": "American University of Sharjah",
+                "degree": "B.S. in Business Administration",
+                "year_of_graduation": 2012,
+                "description": "Concentration in International Business. Graduated Summa Cum Laude."
+            }
+        ]
+    },
+    {
+        "id": 17,
+        "first_name": "Nikolai",
+        "last_name": "Volkov",
+        "birthdate": "1989-11-19",
+        "age": 35,
+        "email": "nikolai.volkov@example.com",
+        "phone": "+74951234567",
+        "address": "Tverskaya Street 4, Moscow, Russia",
+        "domain": "Tech",
+        "skills": [ "Cybersecurity", "Penetration Testing", "SIEM", "Splunk", "Nessus", "Metasploit", "Incident Response", "Python" ],
+        "experiences": [
+            {
+                "company": "SecureNet",
+                "role": "Security Operations Center (SOC) Analyst",
+                "start_date": "2014-01-20",
+                "end_date": "2018-04-30",
+                "description": "Monitored network traffic and system logs for security threats using SIEM tools. Investigated and responded to security alerts, escalating incidents as needed. Developed correlation rules to improve threat detection capabilities."
+            },
+            {
+                "company": "CyberFortress",
+                "role": "Senior Security Engineer",
+                "start_date": "2018-05-01",
+                "end_date": "2025-08-29",
+                "description": "Conducts regular penetration tests and vulnerability assessments on web applications and corporate networks. Leads the incident response team during security breaches. Hardens cloud infrastructure and develops security automation scripts in Python."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Bauman Moscow State Technical University",
+                "degree": "Specialist Degree in Information Security",
+                "year_of_graduation": 2013,
+                "description": "Holds certifications such as CISSP and Offensive Security Certified Professional (OSCP)."
+            }
+        ]
+    },
+    {
+        "id": 18,
+        "first_name": "Amelia",
+        "last_name": "Jones",
+        "birthdate": "1997-02-17",
+        "age": 28,
+        "email": "amelia.jones@example.com",
+        "phone": "+61298765432",
+        "address": "1 Circular Quay, Sydney, Australia",
+        "domain": "Product",
+        "skills": [ "Market Research", "Competitive Analysis", "Data Analysis", "SQL", "Tableau", "User Interviews", "Survey Design" ],
+        "experiences": [
+            {
+                "company": "Insightful Data",
+                "role": "Research Analyst",
+                "start_date": "2020-01-15",
+                "end_date": "2023-03-31",
+                "description": "Conducted quantitative and qualitative research for clients in the technology sector. Designed surveys, analyzed results, and presented findings in comprehensive reports. Used SQL and Tableau to query and visualize data for market sizing projects."
+            },
+            {
+                "company": "Next Big Thing",
+                "role": "Product Marketing Manager",
+                "start_date": "2023-04-01",
+                "end_date": "2025-08-29",
+                "description": "Develops product positioning and messaging that differentiates our products in the market. Creates go-to-market strategies for new feature launches. Collaborates with the product team, providing market insights and customer feedback to influence the product roadmap."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of New South Wales (UNSW)",
+                "degree": "Master of Commerce (Marketing)",
+                "year_of_graduation": 2019,
+                "description": ""
+            },
+            {
+                "institution": "University of Sydney",
+                "degree": "Bachelor of Science (Psychology)",
+                "year_of_graduation": 2018,
+                "description": "Honours thesis on the cognitive biases in decision-making."
+            }
+        ]
+    },
+    {
+        "id": 19,
+        "first_name": "Jamal",
+        "last_name": "Adeboye",
+        "birthdate": "1995-09-05",
+        "age": 29,
+        "email": "jamal.adeboye@example.com",
+        "phone": "+2348012345678",
+        "address": "100 Ikoyi Road, Lagos, Nigeria",
+        "domain": "Sales",
+        "skills": [ "Inside Sales", "Lead Qualification", "SalesLoft", "Outreach", "CRM", "Cold Calling", "Objection Handling" ],
+        "experiences": [
+            {
+                "company": "Fintech Nigeria",
+                "role": "Sales Development Representative",
+                "start_date": "2022-06-01",
+                "end_date": "2025-08-29",
+                "description": "Generates new business opportunities by prospecting into mid-market and enterprise accounts in the financial services industry. Utilizes a multi-channel outreach strategy including calls, emails, and LinkedIn. Consistently exceeds monthly target for setting qualified appointments for Account Executives and was named 'SDR of the Quarter' twice."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of Lagos",
+                "degree": "B.Sc. in Business Administration",
+                "year_of_graduation": 2021,
+                "description": "Active member of the university's entrepreneurship club."
+            }
+        ]
+    },
+    {
+        "id": 20,
+        "first_name": "Seo-yeon",
+        "last_name": "Kim",
+        "birthdate": "1993-07-22",
+        "age": 32,
+        "email": "seoyeon.kim@example.com",
+        "phone": "+82212345678",
+        "address": "Gangnam-daero, Seoul, South Korea",
+        "domain": "Tech",
+        "skills": [ "iOS", "Swift", "SwiftUI", "UIKit", "XCode", "Core Data", "Combine Framework" ],
+        "experiences": [
+            {
+                "company": "K-Apps",
+                "role": "iOS Developer",
+                "start_date": "2016-08-01",
+                "end_date": "2020-09-30",
+                "description": "Contributed to the development of several high-profile apps for the Korean market. Implemented pixel-perfect UIs based on designer mockups using UIKit. Worked on integrating third-party SDKs and RESTful APIs."
+            },
+            {
+                "company": "Global Messenger",
+                "role": "Senior iOS Engineer",
+                "start_date": "2020-10-01",
+                "end_date": "2025-08-29",
+                "description": "Owns the architecture and development of the core chat experience in a messaging app used by hundreds of millions of users. Led the successful adoption of SwiftUI and the Combine framework for new feature development. Improved app start-up time by 25% through performance profiling and optimization."
+            }
+        ],
+        "education": [
+            {
+                "institution": "KAIST (Korea Advanced Institute of Science and Technology)",
+                "degree": "B.S. in Computer Science",
+                "year_of_graduation": 2016,
+                "description": "Graduated with honors. Her graduation project was an award-winning iOS game."
             }
         ]
     }
 ]
+
