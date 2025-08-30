@@ -182,7 +182,15 @@ if run_btn:
         full_name = f"{first} {last}".strip() or f"Candidate #{i}"
 
         recent_title = original_data.experiences[-1].role
+        experience_summary = [
+            f"{experience.role} ({experience.start_date}-{experience.end_date})"
+            for experience in original_data.experiences
+        ]
         recent_company = original_data.experiences[-1].company
+        company_summary = [
+            f"{experience.company} ({experience.start_date}-{experience.end_date})"
+            for experience in original_data.experiences
+        ]
         years = safe(feats, "total_years_of_experience", default=None)
         skills = safe(feats, "skill_keywords", default=[]) or []
 
@@ -213,49 +221,11 @@ if run_btn:
         st.caption("Skills (engineered)")
         render_tags(skills, color="#1E88E5")
 
-        # -------- Easy-to-read full profile (tables) --------
         st.markdown("#### Full Profile")
 
-        # 1) Profile key/value
-        profile_kv = {
-            "Name": full_name,
-            "Email": safe(orig, "email", default=""),
-            "Phone": safe(orig, "phone", default=""),
-            "Age": safe(orig, "age", default=""),
-            "Birthdate": safe(orig, "birthdate", default=""),
-            "Address": safe(orig, "address", default=""),
-        }
-        st.table(pd.DataFrame(list(profile_kv.items()), columns=["Field", "Value"]))
-
-        # 2) Experiences table
-        exp_cols = ["role", "company", "start_date", "end_date", "description"]
-        exp_labels = {
-            "role": "Role",
-            "company": "Company",
-            "start_date": "Start",
-            "end_date": "End",
-            "description": "Description",
-        }
-        exp_df = list_of_dicts_to_df(safe(orig, "experiences", default=[]), exp_cols, exp_labels)
-        st.markdown("**Experiences**")
-        st.write(original_data.experiences)
-
-        # 3) Education table
-        edu_cols = ["degree", "institution", "year_of_graduation", "description"]
-        edu_labels = {
-            "degree": "Degree",
-            "institution": "Institution",
-            "year_of_graduation": "Year",
-            "description": "Description",
-        }
-        edu_df = list_of_dicts_to_df(safe(orig, "education", default=[]), edu_cols, edu_labels)
-        st.markdown("**Education**")
-        st.write(original_data.education)
-
-        # 4) Engineered features table
         feats_summary = {
-            "Recent Title": recent_title,
-            "Recent Company": recent_company,
+            "Recent Title": ", ".join(experience_summary),
+            "Recent Company": ", ".join(company_summary),
             "Years of Experience": years if years is not None else "",
             "Seniority": safe(feats, "seniority_level", default=""),
             "Education Level": safe(feats, "education_level", default=""),

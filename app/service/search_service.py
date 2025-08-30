@@ -19,7 +19,7 @@ from app.model.schemas import (
 
 logger = logging.getLogger(__name__)
 
-SKILL_MATCH_THRESHOLD = 0.4
+SKILL_MATCH_THRESHOLD = 0.2
 
 
 class SearchService:
@@ -80,12 +80,13 @@ class SearchService:
         required_skills = {s.strip().lower() for s in (job_features.extracted_skills or []) if s}
         check_skills = len(required_skills) > 0
 
-        for i, cand in enumerate(self.candidates):
-            feats = cand.engineered_features
+        for i, candidate in enumerate(self.candidates):
+            feats = candidate.engineered_features
 
             # Experience rule
-            cand_years = float(feats.total_years_of_experience or 0.0)
-            if req_years > cand_years:
+            candidate_years = float(feats.total_years_of_experience or 0.0)
+
+            if req_years > candidate_years:
                 continue
 
             # Skill coverage rule (if the job has explicit skills)
@@ -97,7 +98,7 @@ class SearchService:
                 if (len(matched) / len(required_skills)) < SKILL_MATCH_THRESHOLD:
                     continue
 
-            filtered.append((i, cand))
+            filtered.append((i, candidate))
 
         return filtered
 
