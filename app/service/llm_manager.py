@@ -29,14 +29,9 @@ class LLMManager:
             temperature=0,
         )
         self.embedding_client = Mistral(api_key=llm_config.MISTRAL_API_KEY)
-
         job_prompt = ChatPromptTemplate.from_template(JOB_FEATURE_ENGINEERING_PROMPT)
-        candidate_prompt = ChatPromptTemplate.from_template(
-            CANDIDATE_FEATURE_ENGINEERING_PROMPT
-        )
-        self.candidate_feature_chain = (
-            candidate_prompt | self.chat_model | JsonOutputParser()
-        )
+        candidate_prompt = ChatPromptTemplate.from_template(CANDIDATE_FEATURE_ENGINEERING_PROMPT)
+        self.candidate_feature_chain = candidate_prompt | self.chat_model | JsonOutputParser()
         self.job_feature_chain = job_prompt | self.chat_model | JsonOutputParser()
 
     async def generate_candidate_features(
@@ -49,17 +44,13 @@ class LLMManager:
             )
             return EngineeredCandidateFeatures(**raw_features)
         except Exception as e:
-            logging.error(
-                f"Error generating features for candidate: {e}", exc_info=True
-            )
+            logging.error(f"Error generating features for candidate: {e}", exc_info=True)
             return None
 
     async def generate_job_features(self, job: RawJob) -> EngineeredJobFeatures | None:
         try:
             job_json_str = job.model_dump_json(indent=2)
-            raw_features = await self.job_feature_chain.ainvoke(
-                {"job_json": job_json_str}
-            )
+            raw_features = await self.job_feature_chain.ainvoke({"job_json": job_json_str})
             return EngineeredJobFeatures(**raw_features)
         except Exception as e:
             logging.error(f"Error generating features for job: {e}", exc_info=True)
@@ -75,7 +66,5 @@ class LLMManager:
             )
             return response.data[0].embedding
         except Exception as e:
-            logging.error(
-                f"An error occurred during embedding generation: {e}", exc_info=True
-            )
+            logging.error(f"An error occurred during embedding generation: {e}", exc_info=True)
             return None

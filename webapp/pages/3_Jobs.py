@@ -144,6 +144,7 @@ if analyze_btn:
             "location": location,
             "job_description": description,
             "required_skills": [s.strip() for s in skills_csv.split(",") if s.strip()],
+            "budget": job_data.get("budget", {}),
         }
         raw_job = RawJob(**payload)
         with st.spinner("Generating engineered features…"):

@@ -29,8 +29,6 @@ class SearchService:
         self.candidate_embeddings: np.ndarray | None = None
         self._load_candidates(processed_candidates_path)
 
-    # ---------- loading ----------
-
     def _load_candidates(self, file_path: Path) -> None:
         logger.info("Loading pre-processed candidates from %s ...", file_path)
         try:
@@ -38,13 +36,11 @@ class SearchService:
             if not isinstance(raw, list):
                 raise ValueError("processed_candidates.json must be a JSON list.")
 
-            # Build typed candidates + embeddings matrix
             self.candidates = [ProcessedCandidate(**c) for c in raw]
             try:
                 embeddings = [c["embedding"] for c in raw]
             except (KeyError, TypeError):
-                # Fallback: derive from typed objects if dict access fails
-                embeddings = [pc.embedding for pc in self.candidates]  # type: ignore[arg-type]
+                embeddings = [pc.embedding for pc in self.candidates]
 
             self.candidate_embeddings = np.asarray(embeddings, dtype=np.float32)
             logger.info("Successfully loaded %d candidates.", len(self.candidates))
@@ -53,19 +49,12 @@ class SearchService:
             logger.critical("Fatal: could not load or parse candidate data: %s", e)
             raise
 
-    # ---------- job processing ----------
-
     async def _process_job(
         self, raw_job: RawJob
     ) -> Tuple[EngineeredJobFeatures | None, List[float] | None]:
-        """
-        1) Generate job engineered features via LLM
-        2) Create embedding from job summary (run in thread to avoid blocking)
-        """
         job_features = await self.llm_manager.generate_job_features(raw_job)
         if not job_features:
             return None, None
-
         try:
             job_embedding = await asyncio.to_thread(
                 self.llm_manager.get_embedding, job_features.job_summary_for_embedding
@@ -75,8 +64,6 @@ class SearchService:
             job_embedding = None
 
         return job_features, job_embedding
-
-    # ---------- filtering ----------
 
     def _filter_candidates(
         self, job_features: EngineeredJobFeatures
@@ -114,23 +101,18 @@ class SearchService:
 
         return filtered
 
-    # ---------- ranking ----------
-
     def _rank_candidates(
         self,
         job_embedding: np.ndarray,
         filtered_candidates_with_indices: List[tuple[int, ProcessedCandidate]],
     ) -> List[RankedCandidate]:
-        """
-        Rank filtered candidates by cosine similarity between job embedding and candidate embeddings.
-        """
+
         if not filtered_candidates_with_indices or self.candidate_embeddings is None:
             return []
 
         indices = [idx for idx, _ in filtered_candidates_with_indices]
         filtered_embs = self.candidate_embeddings[indices]
 
-        # (1, d) dot (n, d) -> (n,)
         scores = cosine_similarity(job_embedding.reshape(1, -1), filtered_embs)[0]
 
         ranked: List[RankedCandidate] = []
@@ -139,8 +121,6 @@ class SearchService:
 
         ranked.sort(key=lambda rc: rc.score, reverse=True)
         return ranked
-
-    # ---------- public API ----------
 
     async def find_top_candidates(self, raw_job: RawJob, top_n: int = 100) -> List[RankedCandidate]:
         logger.info("Starting search for job: %s", raw_job.job_title)
