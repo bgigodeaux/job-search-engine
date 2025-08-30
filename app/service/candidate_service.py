@@ -1,108 +1,165 @@
+# app/service/candidate_service.py
+from __future__ import annotations
+
+import asyncio
 import json
 import logging
-import asyncio
 from pathlib import Path
-from typing import List
-from tqdm.asyncio import tqdm
+from typing import Any, Dict, List, Optional
 
-from app.service.llm_manager import LLMManager
+from tqdm.asyncio import tqdm as tqdm_asyncio
+
 from app.model.schemas import (
     RawCandidate,
-    ProcessedCandidate,
     EngineeredCandidateFeatures,
+    ProcessedCandidate,
 )
+from app.service.llm_manager import LLMManager
 
 logger = logging.getLogger(__name__)
 
 
 class CandidateService:
-    def __init__(self, llm_manager: LLMManager):
+    """
+    Processes raw candidates into ProcessedCandidate objects:
+      - id: int             (taken from the raw dict)
+      - original_data: RawCandidate
+      - engineered_features: EngineeredCandidateFeatures
+      - embedding: List[float]
+    Writes a JSON list of these to output_path (OVERWRITE).
+    """
+
+    def __init__(self, llm_manager: LLMManager, max_concurrency: int = 10) -> None:
         self.llm_manager = llm_manager
-        self.semaphore = asyncio.Semaphore(10)  # Limits concurrent API calls to 10
+        self.semaphore = asyncio.Semaphore(max_concurrency)
 
-    async def _engineer_features(
-        self, raw_candidate: RawCandidate
-    ) -> EngineeredCandidateFeatures | None:
-        engineered_features = await self.llm_manager.generate_candidate_features(
-            raw_candidate
-        )
-        if not engineered_features:
-            logger.warning(
-                f"Skipping candidate due to feature generation failure: {raw_candidate.email}"
-            )
-            return None
-        return engineered_features
+    # ---------- internals ----------
 
-    async def _generate_embedding(
-        self, engineered_features: EngineeredCandidateFeatures
-    ) -> List[float] | None:
-        loop = asyncio.get_running_loop()
-        embedding = await loop.run_in_executor(
-            None,
-            self.llm_manager.get_embedding,
-            engineered_features.candidate_summary,
-        )
-        if not embedding:
-            logger.warning(
-                f"Skipping candidate due to embedding failure for summary: '{engineered_features.candidate_summary[:50]}...'"
-            )
+    async def _engineer_features(self, raw: RawCandidate) -> Optional[EngineeredCandidateFeatures]:
+        """
+        Call LLM to generate engineered features; coerce to EngineeredCandidateFeatures.
+        """
+        feats = await self.llm_manager.generate_candidate_features(raw)
+        if not feats:
+            logger.warning("Skipping candidate due to feature generation failure: %s", raw.email)
             return None
-        return embedding
+
+        if isinstance(feats, EngineeredCandidateFeatures):
+            return feats
+        if hasattr(feats, "model_dump"):
+            return EngineeredCandidateFeatures(**feats.model_dump())  # type: ignore[arg-type]
+        if hasattr(feats, "dict"):
+            return EngineeredCandidateFeatures(**feats.dict())  # type: ignore[arg-type]
+        if isinstance(feats, dict):
+            return EngineeredCandidateFeatures(**feats)
+
+        logger.warning("Unexpected features type for %s: %r", raw.email, type(feats))
+        return None
+
+    async def _generate_embedding(self, text: str) -> Optional[List[float]]:
+        """
+        Compute embedding for a text. Runs in a thread to avoid blocking the event loop.
+        """
+        if not text:
+            logger.warning("Empty text passed for embedding; skipping.")
+            return None
+        try:
+            return await asyncio.to_thread(self.llm_manager.get_embedding, text)
+        except Exception as e:
+            logger.warning("Embedding failure for text: %.50s… | %s", text, e)
+            return None
 
     async def _process_single_candidate(
-        self, candidate_data: dict
-    ) -> ProcessedCandidate | None:
+        self, cand_data: Dict[str, Any]
+    ) -> Optional[ProcessedCandidate]:
+        """
+        Build a ProcessedCandidate (or return None if any step fails).
+        Expects an 'id' key in cand_data; RawCandidate schema does not include it.
+        """
         async with self.semaphore:
             try:
-                raw_candidate = RawCandidate(**candidate_data)
-
-                # Step 1: Generate structured features
-                engineered_features = await self._engineer_features(raw_candidate)
-                if not engineered_features:
+                # Ensure we have an id for the processed object
+                raw_id = cand_data.get("id")
+                if raw_id is None:
+                    logger.warning(
+                        "Candidate missing 'id'; skipping. email=%s", cand_data.get("email")
+                    )
                     return None
 
-                # Step 2: Generate embedding
-                embedding = await self._generate_embedding(engineered_features)
+                # Validate and normalize the raw portion with Pydantic
+                raw = RawCandidate(**cand_data)
+
+                # 1) engineered features
+                feats = await self._engineer_features(raw)
+                if not feats:
+                    return None
+
+                # 2) embedding (prefer summary, fallback to simple join of skills)
+                summary = feats.candidate_summary or " ".join(raw.skills)
+                embedding = await self._generate_embedding(summary)
                 if not embedding:
                     return None
 
-                # Step 3: Combine into final object
+                # 3) pack -> ProcessedCandidate
                 return ProcessedCandidate(
-                    original_data=raw_candidate,
-                    engineered_features=engineered_features,
+                    id=int(raw_id),
+                    original_data=raw,
+                    engineered_features=feats,
                     embedding=embedding,
                 )
+
             except Exception as e:
                 logger.error(
-                    f"Unhandled error processing candidate {candidate_data.get('email')}: {e}",
+                    "Unhandled error processing candidate %s: %s",
+                    cand_data.get("email"),
+                    e,
                     exc_info=True,
                 )
                 return None
 
-    async def process_candidates_from_file(self, input_path: Path, output_path: Path):
+    # ---------- public API ----------
+
+    async def process_candidates_from_file(self, input_path: Path, output_path: Path) -> None:
+        """
+        Reads ALL raw candidates from input_path, processes them concurrently,
+        and OVERWRITES output_path with a JSON list of ProcessedCandidate dicts.
+        """
+        # Load raw list
         try:
-            with open(input_path, "r") as f:
-                raw_candidates_data = json.load(f)
-        except (FileNotFoundError, json.JSONDecodeError) as e:
-            logger.critical(
-                f"Fatal: Error loading candidate data from {input_path}: {e}"
-            )
+            raw_list = json.loads(input_path.read_text(encoding="utf-8"))
+            if not isinstance(raw_list, list):
+                raise ValueError("Input must be a JSON list of candidate dicts.")
+        except Exception as e:
+            logger.critical("Fatal: error loading %s: %s", input_path, e)
             return
 
-        tasks = [self._process_single_candidate(c) for c in raw_candidates_data]
+        # Process with progress
+        tasks = [self._process_single_candidate(c) for c in raw_list]
+        results = await tqdm_asyncio.gather(*tasks, desc="Processing Candidates")
 
-        results = await tqdm.gather(*tasks, desc="Processing Candidates")
+        # Keep only successful; serialize to plain dicts (Pydantic v2/v1)
+        processed: List[Dict[str, Any]] = []
+        for r in results:
+            if r is None:
+                continue
+            if hasattr(r, "model_dump"):
+                processed.append(r.model_dump())  # Pydantic v2
+            elif hasattr(r, "dict"):
+                processed.append(r.dict())  # Pydantic v1
+            else:
+                processed.append(r)  # last-resort fallback (shouldn't happen)
 
-        processed_results = [
-            result.model_dump() for result in results if result is not None
-        ]
-
+        # Save (overwrite)
         try:
             output_path.parent.mkdir(parents=True, exist_ok=True)
-            with open(output_path, "w") as f:
-                json.dump(processed_results, f, indent=2)
-            logger.info(
-                f"\nSuccessfully processed {len(processed_results)}/{len(raw_candidates_data)} candidates and saved to {output_path}"
+            output_path.write_text(
+                json.dumps(processed, indent=2, ensure_ascii=False), encoding="utf-8"
             )
-        except IOError as e:
-            logger.critical(f"Fatal: Error saving results to {output_path}: {e}")
+            logger.info(
+                "Processed %d/%d candidates → %s",
+                len(processed),
+                len(raw_list),
+                output_path,
+            )
+        except Exception as e:
+            logger.critical("Fatal: error saving %s: %s", output_path, e)

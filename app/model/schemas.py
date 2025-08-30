@@ -21,15 +21,14 @@ class RawCandidate(BaseModel):
     first_name: str
     last_name: str
     email: str
+    birthdate: Optional[str] = None
+    age: Optional[int] = None
+    phone: Optional[str] = None
+    address: Optional[str] = None
+    domain: Optional[str] = None
     skills: List[str]
     experiences: List[Experience]
     education: List[Education]
-    # Allow other fields from the original JSON
-    extra_data: Dict[str, Any] = Field(default_factory=dict, alias="extra")
-
-    class Config:
-        # Allows populating extra_data with fields not explicitly defined
-        extra = "allow"
 
 
 class RawJob(BaseModel):
@@ -38,11 +37,7 @@ class RawJob(BaseModel):
     required_skills: List[str]
     company_name: str
     location: str
-    # Allow other fields
-    extra_data: Dict[str, Any] = Field(default_factory=dict, alias="extra")
-
-    class Config:
-        extra = "allow"
+    budget: dict
 
 
 class EngineeredCandidateFeatures(BaseModel):
@@ -61,12 +56,14 @@ class EngineeredJobFeatures(BaseModel):
 
 
 class ProcessedCandidate(BaseModel):
+    id: int
     original_data: RawCandidate
     engineered_features: EngineeredCandidateFeatures
     embedding: List[float]
 
 
 class ProcessedJob(BaseModel):
+    id: int
     original_data: RawJob
     engineered_features: EngineeredJobFeatures
     embedding: List[float]

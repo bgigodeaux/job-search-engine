@@ -1,31 +1,25 @@
+from __future__ import annotations
+
+import asyncio
 import json
 import logging
-import asyncio
 from pathlib import Path
-from typing import List
+from typing import List, Tuple
 
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
-from pydantic import BaseModel
 
 from app.service.llm_manager import LLMManager
 from app.model.schemas import (
     RawJob,
     ProcessedCandidate,
     EngineeredJobFeatures,
+    RankedCandidate,
 )
-
-
-# Define the missing data model for a ranked result
-class RankedCandidate(BaseModel):
-    candidate: ProcessedCandidate
-    score: float
-
 
 logger = logging.getLogger(__name__)
 
-# Constants for less strict filtering
-SKILL_MATCH_THRESHOLD = 0.6  # Candidate must have at least 60% of required skills
+SKILL_MATCH_THRESHOLD = 0.6  # Candidate must have at least 60% of the job's required skills
 
 
 class SearchService:
@@ -35,113 +29,130 @@ class SearchService:
         self.candidate_embeddings: np.ndarray | None = None
         self._load_candidates(processed_candidates_path)
 
-    def _load_candidates(self, file_path: Path):
-        logger.info(f"Loading pre-processed candidates from {file_path}...")
+    # ---------- loading ----------
+
+    def _load_candidates(self, file_path: Path) -> None:
+        logger.info("Loading pre-processed candidates from %s ...", file_path)
         try:
-            with open(file_path, "r") as f:
-                data = json.load(f)
+            raw = json.loads(file_path.read_text(encoding="utf-8"))
+            if not isinstance(raw, list):
+                raise ValueError("processed_candidates.json must be a JSON list.")
 
-            self.candidates = [ProcessedCandidate(**c) for c in data]
+            # Build typed candidates + embeddings matrix
+            self.candidates = [ProcessedCandidate(**c) for c in raw]
+            try:
+                embeddings = [c["embedding"] for c in raw]
+            except (KeyError, TypeError):
+                # Fallback: derive from typed objects if dict access fails
+                embeddings = [pc.embedding for pc in self.candidates]  # type: ignore[arg-type]
 
-            embeddings = [c["embedding"] for c in data]
-            self.candidate_embeddings = np.array(embeddings, dtype=np.float32)
+            self.candidate_embeddings = np.asarray(embeddings, dtype=np.float32)
+            logger.info("Successfully loaded %d candidates.", len(self.candidates))
 
-            logger.info(f"Successfully loaded {len(self.candidates)} candidates.")
-        except (FileNotFoundError, json.JSONDecodeError, KeyError) as e:
-            logger.critical(f"Fatal: Could not load or parse candidate data: {e}")
+        except Exception as e:
+            logger.critical("Fatal: could not load or parse candidate data: %s", e)
             raise
+
+    # ---------- job processing ----------
 
     async def _process_job(
         self, raw_job: RawJob
-    ) -> tuple[EngineeredJobFeatures | None, List[float] | None]:
+    ) -> Tuple[EngineeredJobFeatures | None, List[float] | None]:
+        """
+        1) Generate job engineered features via LLM
+        2) Create embedding from job summary (run in thread to avoid blocking)
+        """
         job_features = await self.llm_manager.generate_job_features(raw_job)
         if not job_features:
             return None, None
 
-        # NOTE: Run sync embedding in executor to not block the event loop
-        loop = asyncio.get_running_loop()
-        job_embedding = await loop.run_in_executor(
-            None,
-            self.llm_manager.get_embedding,
-            job_features.job_summary_for_embedding,
-        )
+        try:
+            job_embedding = await asyncio.to_thread(
+                self.llm_manager.get_embedding, job_features.job_summary_for_embedding
+            )
+        except Exception as e:
+            logger.error("Failed to compute job embedding: %s", e, exc_info=True)
+            job_embedding = None
+
         return job_features, job_embedding
+
+    # ---------- filtering ----------
 
     def _filter_candidates(
         self, job_features: EngineeredJobFeatures
     ) -> List[tuple[int, ProcessedCandidate]]:
-        filtered_indices = []
-        for i, candidate in enumerate(self.candidates):
-            features = candidate.engineered_features
+        """
+        Hard filters before semantic ranking:
+          - experience: candidate years >= required years
+          - skills: at least SKILL_MATCH_THRESHOLD overlap with required skills
+        Returns pairs (index_in_embeddings, candidate)
+        """
+        filtered: List[tuple[int, ProcessedCandidate]] = []
+        req_years = float(job_features.required_experience_years or 0.0)
 
-            # Rule 1: Candidate experience must be sufficient
-            if (
-                job_features.required_experience_years
-                > features.total_years_of_experience
-            ):
+        required_skills = {s.strip().lower() for s in (job_features.extracted_skills or []) if s}
+        check_skills = len(required_skills) > 0
+
+        for i, cand in enumerate(self.candidates):
+            feats = cand.engineered_features
+
+            # Experience rule
+            cand_years = float(feats.total_years_of_experience or 0.0)
+            if req_years > cand_years:
                 continue
 
-            # Rule 2: Candidate must have a minimum percentage of skills
-            required_skills = set(s.lower() for s in job_features.extracted_skills)
-            if required_skills:  # Only check if there are skills required
-                candidate_skills = set(s.lower() for s in features.skill_keywords)
-                matched_skills = required_skills.intersection(candidate_skills)
-
-                if (len(matched_skills) / len(required_skills)) < SKILL_MATCH_THRESHOLD:
+            # Skill coverage rule (if the job has explicit skills)
+            if check_skills:
+                cand_sk = {s.strip().lower() for s in (feats.skill_keywords or []) if s}
+                if not cand_sk:
+                    continue
+                matched = required_skills.intersection(cand_sk)
+                if (len(matched) / len(required_skills)) < SKILL_MATCH_THRESHOLD:
                     continue
 
-            filtered_indices.append((i, candidate))
+            filtered.append((i, cand))
 
-        return filtered_indices
+        return filtered
+
+    # ---------- ranking ----------
 
     def _rank_candidates(
         self,
         job_embedding: np.ndarray,
         filtered_candidates_with_indices: List[tuple[int, ProcessedCandidate]],
     ) -> List[RankedCandidate]:
+        """
+        Rank filtered candidates by cosine similarity between job embedding and candidate embeddings.
+        """
         if not filtered_candidates_with_indices or self.candidate_embeddings is None:
             return []
 
         indices = [idx for idx, _ in filtered_candidates_with_indices]
-        filtered_embeddings = self.candidate_embeddings[indices]
+        filtered_embs = self.candidate_embeddings[indices]
 
-        similarity_scores = cosine_similarity(
-            job_embedding.reshape(1, -1), filtered_embeddings
-        )[0]
+        # (1, d) dot (n, d) -> (n,)
+        scores = cosine_similarity(job_embedding.reshape(1, -1), filtered_embs)[0]
 
-        ranked_results = []
-        for score, (original_index, candidate) in zip(
-            similarity_scores, filtered_candidates_with_indices
-        ):
-            ranked_results.append(RankedCandidate(candidate=candidate, score=score))
+        ranked: List[RankedCandidate] = []
+        for score, (_, cand) in zip(scores, filtered_candidates_with_indices):
+            ranked.append(RankedCandidate(candidate=cand, score=float(score)))
 
-        ranked_results.sort(key=lambda x: x.score, reverse=True)
-        return ranked_results
+        ranked.sort(key=lambda rc: rc.score, reverse=True)
+        return ranked
 
-    async def find_top_candidates(
-        self, raw_job: RawJob, top_n: int = 100
-    ) -> List[RankedCandidate]:
-        logger.info(f"Starting search for job: '{raw_job.job_title}'")
+    # ---------- public API ----------
 
-        # Step 1: Process job to get features and embedding
-        job_features, job_embedding_list = await self._process_job(raw_job)
-        print(job_features)
-        if not job_features or not job_embedding_list:
-            logger.error("Failed to process job, cannot perform search.")
+    async def find_top_candidates(self, raw_job: RawJob, top_n: int = 100) -> List[RankedCandidate]:
+        logger.info("Starting search for job: %s", raw_job.job_title)
+
+        job_feats, job_emb_list = await self._process_job(raw_job)
+        if not job_feats or not job_emb_list:
+            logger.error("Failed to process job; cannot perform search.")
             return []
 
-        job_embedding = np.array(job_embedding_list, dtype=np.float32)
+        job_emb = np.asarray(job_emb_list, dtype=np.float32)
 
-        # Step 2: Filter candidates based on hard rules
-        filtered_candidates = self._filter_candidates(job_features)
-        logger.info(
-            f"Filtering phase: {len(self.candidates)} -> {len(filtered_candidates)} candidates."
-        )
+        filtered = self._filter_candidates(job_feats)
+        ranked = self._rank_candidates(job_emb, filtered)
 
-        # Step 3: Rank the filtered candidates by semantic similarity
-        ranked_candidates = self._rank_candidates(job_embedding, filtered_candidates)
-        logger.info(
-            f"Ranking phase complete. Found {len(ranked_candidates)} relevant candidates."
-        )
-
-        return ranked_candidates[:top_n]
+        return ranked[:top_n]

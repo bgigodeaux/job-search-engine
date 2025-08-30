@@ -8,7 +8,6 @@
         "email": "olivia.chen@example.com",
         "phone": "+14155550101",
         "address": "789 Tech Way, Mountain View, CA, USA",
-        "domain": "Tech",
         "skills": [ "Python", "Go", "Kubernetes", "Docker", "AWS", "Microservices", "PostgreSQL", "CI/CD" ],
         "experiences": [
             {
@@ -50,7 +49,6 @@
         "email": "ben.carter@example.com",
         "phone": "+12125550102",
         "address": "456 Market St, New York, NY, USA",
-        "domain": "Product",
         "skills": [ "Product Strategy", "Roadmap Planning", "Agile Methodologies", "Jira", "User Research", "A/B Testing", "Data Analysis", "Figma" ],
         "experiences": [
             {
@@ -92,7 +90,6 @@
         "email": "chloe.rodriguez@example.com",
         "phone": "+13125550103",
         "address": "101 Startup Ave, Austin, TX, USA",
-        "domain": "Sales",
         "skills": [ "Enterprise Sales", "Salesforce", "Lead Generation", "Negotiation", "Account Management", "SaaS", "HubSpot" ],
         "experiences": [
             {
@@ -128,7 +125,6 @@
         "email": "daniel.patel@example.com",
         "phone": "+442079460104",
         "address": "221B Baker St, London, UK",
-        "domain": "Tech",
         "skills": [ "JavaScript", "TypeScript", "React", "Node.js", "GraphQL", "Webpack", "Jest" ],
         "experiences": [
             {
@@ -164,7 +160,6 @@
         "email": "sophia.dubois@example.com",
         "phone": "+33123456789",
         "address": "15 Rue de la Paix, Paris, France",
-        "domain": "Product",
         "skills": [ "UX Research", "UI Design", "Figma", "Sketch", "Adobe XD", "Wireframing", "Prototyping", "User-Centered Design" ],
         "experiences": [
             {
@@ -200,7 +195,6 @@
         "email": "liam.osullivan@example.com",
         "phone": "+35319876543",
         "address": "42 Silicon Docks, Dublin, Ireland",
-        "domain": "Sales",
         "skills": [ "Sales Management", "Team Leadership", "Sales Strategy", "Forecasting", "CRM Administration", "Salesforce", "Key Account Development" ],
         "experiences": [
             {
@@ -236,7 +230,6 @@
         "email": "aisha.khan@example.com",
         "phone": "+16475550105",
         "address": "300 Tech Tower, Toronto, ON, Canada",
-        "domain": "Tech",
         "skills": [ "Python", "Pandas", "Scikit-learn", "TensorFlow", "SQL", "Machine Learning", "Data Visualization", "Natural Language Processing" ],
         "experiences": [
             {
@@ -278,7 +271,6 @@
         "email": "mateo.garcia@example.com",
         "phone": "+34912345678",
         "address": "Gran Vía 28, Madrid, Spain",
-        "domain": "Product",
         "skills": [ "Agile", "Scrum", "Product Backlog Management", "Jira", "Stakeholder Management", "User Story Mapping", "Certified Scrum Product Owner (CSPO)" ],
         "experiences": [
             {
@@ -320,7 +312,6 @@
         "email": "hana.tanaka@example.com",
         "phone": "+81345678901",
         "address": "Shibuya Crossing, Tokyo, Japan",
-        "domain": "Sales",
         "skills": [ "Customer Success", "Account Management", "Zendesk", "Gainsight", "Client Onboarding", "Retention Strategies", "Upselling" ],
         "experiences": [
             {
@@ -356,7 +347,6 @@
         "email": "leo.schmidt@example.com",
         "phone": "+49301234567",
         "address": "Alexanderplatz 1, Berlin, Germany",
-        "domain": "Tech",
         "skills": [ "DevOps", "CI/CD", "Jenkins", "GitLab CI", "Terraform", "Ansible", "GCP", "Prometheus", "Grafana" ],
         "experiences": [
             {
@@ -392,7 +382,6 @@
         "email": "isabelle.leclerc@example.com",
         "phone": "+15145550106",
         "address": "75 Sherbrooke St, Montreal, QC, Canada",
-        "domain": "Product",
         "skills": [ "Technical Product Management", "API Design", "System Architecture", "SQL", "Agile", "Roadmap Prioritization", "Cloud Services" ],
         "experiences": [
             {
@@ -428,7 +417,6 @@
         "email": "carlos.silva@example.com",
         "phone": "+5511987654321",
         "address": "Avenida Paulista 1000, São Paulo, Brazil",
-        "domain": "Sales",
         "skills": [ "Solutions Engineering", "Pre-Sales", "Technical Demonstrations", "Proof of Concept (PoC)", "API Integration", "Python", "AWS" ],
         "experiences": [
             {
@@ -464,7 +452,6 @@
         "email": "priya.sharma@example.com",
         "phone": "+918012345678",
         "address": "1 Tech Park, Bangalore, India",
-        "domain": "Tech",
         "skills": [ "Android", "Kotlin", "Java", "Jetpack Compose", "MVVM", "REST APIs", "Mobile UI/UX" ],
         "experiences": [
             {
@@ -500,7 +487,6 @@
         "email": "david.goldberg@example.com",
         "phone": "+972541234567",
         "address": "Rothschild Blvd 22, Tel Aviv, Israel",
-        "domain": "Product",
         "skills": [ "Growth Hacking", "Product-Led Growth (PLG)", "A/B Testing", "Data Analysis", "SQL", "Amplitude", "Marketing Automation" ],
         "experiences": [
             {
@@ -536,7 +522,6 @@
         "email": "wei.zhang@example.com",
         "phone": "+861012345678",
         "address": "Zhongguancun, Beijing, China",
-        "domain": "Tech",
         "skills": [ "ETL", "Apache Spark", "Hadoop", "Airflow", "SQL", "Python", "Data Warehousing", "AWS Redshift" ],
         "experiences": [
             {
@@ -578,7 +563,6 @@
         "email": "fatima.aljamil@example.com",
         "phone": "+971501234567",
         "address": "Downtown Dubai, Dubai, UAE",
-        "domain": "Sales",
         "skills": [ "Channel Sales", "Partner Management", "Business Development", "Go-to-Market Strategy", "Contract Negotiation", "Salesforce" ],
         "experiences": [
             {
@@ -614,7 +598,6 @@
         "email": "nikolai.volkov@example.com",
         "phone": "+74951234567",
         "address": "Tverskaya Street 4, Moscow, Russia",
-        "domain": "Tech",
         "skills": [ "Cybersecurity", "Penetration Testing", "SIEM", "Splunk", "Nessus", "Metasploit", "Incident Response", "Python" ],
         "experiences": [
             {
@@ -650,7 +633,6 @@
         "email": "amelia.jones@example.com",
         "phone": "+61298765432",
         "address": "1 Circular Quay, Sydney, Australia",
-        "domain": "Product",
         "skills": [ "Market Research", "Competitive Analysis", "Data Analysis", "SQL", "Tableau", "User Interviews", "Survey Design" ],
         "experiences": [
             {
@@ -692,7 +674,6 @@
         "email": "jamal.adeboye@example.com",
         "phone": "+2348012345678",
         "address": "100 Ikoyi Road, Lagos, Nigeria",
-        "domain": "Sales",
         "skills": [ "Inside Sales", "Lead Qualification", "SalesLoft", "Outreach", "CRM", "Cold Calling", "Objection Handling" ],
         "experiences": [
             {
@@ -721,7 +702,6 @@
         "email": "seoyeon.kim@example.com",
         "phone": "+82212345678",
         "address": "Gangnam-daero, Seoul, South Korea",
-        "domain": "Tech",
         "skills": [ "iOS", "Swift", "SwiftUI", "UIKit", "XCode", "Core Data", "Combine Framework" ],
         "experiences": [
             {
