@@ -166,9 +166,13 @@ if run_btn:
 
     st.subheader(f"Top {len(ranked_candidates)} Matches")
 
-    # Render each candidate card
     for i, rc in enumerate(ranked_candidates, 1):
-        score = float(safe(rc, "score", default=0.0) or 0.0)
+        score = float(rc.score)
+        candidate = rc.candidate
+
+        original_data = rc.candidate.original_data
+        engineered_features = rc.candidate.engineered_features
+
         cand = safe(rc, "candidate", default=None)
         feats = safe(cand, "engineered_features", default=None)
         orig = safe(cand, "original_data", default=None)
@@ -177,8 +181,8 @@ if run_btn:
         last = safe(orig, "last_name", default="") or ""
         full_name = f"{first} {last}".strip() or f"Candidate #{i}"
 
-        recent_title = safe(feats, "recent_job_title", default="—")
-        recent_company = safe(feats, "recent_company", default="—")
+        recent_title = original_data.experiences[-1].role
+        recent_company = original_data.experiences[-1].company
         years = safe(feats, "total_years_of_experience", default=None)
         skills = safe(feats, "skill_keywords", default=[]) or []
 
@@ -234,7 +238,7 @@ if run_btn:
         }
         exp_df = list_of_dicts_to_df(safe(orig, "experiences", default=[]), exp_cols, exp_labels)
         st.markdown("**Experiences**")
-        st.dataframe(exp_df, use_container_width=True)
+        st.write(original_data.experiences)
 
         # 3) Education table
         edu_cols = ["degree", "institution", "year_of_graduation", "description"]
@@ -246,7 +250,7 @@ if run_btn:
         }
         edu_df = list_of_dicts_to_df(safe(orig, "education", default=[]), edu_cols, edu_labels)
         st.markdown("**Education**")
-        st.dataframe(edu_df, use_container_width=True)
+        st.write(original_data.education)
 
         # 4) Engineered features table
         feats_summary = {

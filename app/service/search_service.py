@@ -19,7 +19,7 @@ from app.model.schemas import (
 
 logger = logging.getLogger(__name__)
 
-SKILL_MATCH_THRESHOLD = 0.6
+SKILL_MATCH_THRESHOLD = 0.4
 
 
 class SearchService:
