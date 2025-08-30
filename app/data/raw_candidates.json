@@ -21,7 +21,7 @@
                 "company": "QuantumLeap Tech",
                 "role": "Senior Backend Engineer",
                 "start_date": "2017-10-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Led the architecture and development of a new microservices-based platform in Go, improving system scalability and resilience. Championed the adoption of Docker and Kubernetes for containerization and orchestration, which decreased deployment times by 40%. Mentored junior engineers on best practices for coding and system design."
             }
         ],
@@ -62,7 +62,7 @@
                 "company": "InnovateForward",
                 "role": "Senior Product Manager",
                 "start_date": "2016-09-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Own the product vision, strategy, and roadmap for a suite of SaaS analytics tools. Led a cross-functional team of 10 to launch three major products, resulting in a 30% year-over-year revenue growth. Utilized A/B testing and user feedback to drive a 25% increase in user engagement."
             }
         ],
@@ -103,7 +103,7 @@
                 "company": "ScaleUp Solutions",
                 "role": "Account Executive",
                 "start_date": "2019-04-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Manage the full sales cycle for a portfolio of enterprise clients in the fintech sector. Achieved 150% of annual quota in 2024 by closing over $2M in new business. Built and maintained strong client relationships, leading to a 95% renewal rate."
             }
         ],
@@ -138,7 +138,7 @@
                 "company": "Fintech Innovations",
                 "role": "Senior Full-Stack Engineer",
                 "start_date": "2019-07-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Architected and built a new customer-facing dashboard using TypeScript, React, and Node.js with a GraphQL API. Led the frontend team in adopting modern testing practices with Jest and Cypress, increasing code coverage by 50%. Optimized application performance, resulting in a 60% reduction in load times."
             }
         ],
@@ -173,7 +173,7 @@
                 "company": "Visionary Apps",
                 "role": "Lead Product Designer",
                 "start_date": "2021-03-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Led the end-to-end design process for a new productivity app, from initial user research to final high-fidelity UI. The app was featured on the App Store and achieved over 1 million downloads in its first year. Manages a small team of designers, providing mentorship and creative direction."
             }
         ],
@@ -208,7 +208,7 @@
                 "company": "HyperGrowth SaaS",
                 "role": "Regional Sales Manager",
                 "start_date": "2017-07-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Lead a team of 12 account executives covering Northern Europe. Grew the region's annual recurring revenue (ARR) from $5M to $25M in 5 years. Implemented a new sales training program that decreased ramp-up time for new hires by 30%."
             }
         ],
@@ -243,7 +243,7 @@
                 "company": "AI Innovations",
                 "role": "Machine Learning Scientist",
                 "start_date": "2018-09-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Researched and developed machine learning models for recommendation engines and fraud detection. Deployed a new NLP model that improved customer support ticket classification accuracy by 35%. Published findings at a major AI conference."
             }
         ],
@@ -267,7 +267,7 @@
         "first_name": "Mateo",
         "last_name": "Garcia",
         "birthdate": "1990-09-09",
-        "age": 34,
+        "age": 35,
         "email": "mateo.garcia@example.com",
         "phone": "+34912345678",
         "address": "Gran Vía 28, Madrid, Spain",
@@ -284,7 +284,7 @@
                 "company": "AgileSoft Factory",
                 "role": "Product Owner",
                 "start_date": "2016-05-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Owns and prioritizes the product backlog for two scrum teams developing a project management software. Works closely with stakeholders to define acceptance criteria and ensure alignment with business goals. Led the team to increase velocity by 20% through improved backlog refinement processes."
             }
         ],
@@ -325,7 +325,7 @@
                 "company": "PartnerPro",
                 "role": "Customer Success Manager",
                 "start_date": "2022-02-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Manages a portfolio of 40 strategic accounts, ensuring they achieve their desired outcomes while using our product. Drove product adoption through proactive engagement and training, resulting in a 10% reduction in churn. Identified upsell opportunities that contributed to a 15% increase in expansion revenue."
             }
         ],
@@ -360,7 +360,7 @@
                 "company": "CloudNative GmbH",
                 "role": "Senior DevOps Engineer",
                 "start_date": "2018-06-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Designed and implemented CI/CD pipelines for a microservices architecture, reducing manual deployment efforts to zero. Managed infrastructure-as-code using Terraform on Google Cloud Platform. Built a comprehensive monitoring and alerting system with Prometheus and Grafana, improving system uptime to 99.99%."
             }
         ],
@@ -395,7 +395,7 @@
                 "company": "Platform Pioneers",
                 "role": "Technical Product Manager",
                 "start_date": "2018-11-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Manages the product roadmap for the company's core API and developer platform. Defines technical requirements and works closely with architects to ensure solutions are scalable and secure. Led the launch of a new API version that saw a 200% increase in adoption by third-party developers."
             }
         ],
@@ -430,7 +430,7 @@
                 "company": "CloudCorp LatAm",
                 "role": "Solutions Engineer",
                 "start_date": "2019-09-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Serves as the primary technical resource for the enterprise sales team. Delivers compelling product demonstrations and builds custom proof-of-concept solutions for prospective clients. Instrumental in closing a landmark $1.5M deal by designing a bespoke integration plan."
             }
         ],
@@ -465,7 +465,7 @@
                 "company": "SuperApp India",
                 "role": "Senior Android Engineer",
                 "start_date": "2021-10-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Leads the development of the payments module within the main application. Spearheaded the migration from XML layouts to Jetpack Compose, improving developer productivity and UI performance. Mentors other engineers on the team and advocates for mobile development best practices."
             }
         ],
@@ -500,7 +500,7 @@
                 "company": "ViralGrowth Inc.",
                 "role": "Growth Product Manager",
                 "start_date": "2016-01-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Leads a dedicated growth squad focused on improving user activation, engagement, and retention. Runs a high-tempo experimentation program, launching multiple A/B tests per week. Led an initiative to revamp the user onboarding flow, resulting in a 20% increase in 7-day retention."
             }
         ],
@@ -535,7 +535,7 @@
                 "company": "BigData Corp",
                 "role": "Data Engineer II",
                 "start_date": "2020-09-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Architects and builds scalable big data pipelines using Apache Spark and Airflow. Designed and implemented a new data lake on AWS S3, enabling more efficient data processing and analytics for the data science team. Optimized Spark jobs to reduce processing time by over 50% for critical pipelines."
             }
         ],
@@ -576,7 +576,7 @@
                 "company": "Global Software Alliance",
                 "role": "Director of Channel Sales, MENA",
                 "start_date": "2018-08-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Defines and executes the channel sales strategy for the Middle East and North Africa region. Recruited and onboarded 30 new strategic partners, increasing channel-driven revenue by 300% over four years. Leads a team of partner managers to achieve regional sales targets."
             }
         ],
@@ -611,7 +611,7 @@
                 "company": "CyberFortress",
                 "role": "Senior Security Engineer",
                 "start_date": "2018-05-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Conducts regular penetration tests and vulnerability assessments on web applications and corporate networks. Leads the incident response team during security breaches. Hardens cloud infrastructure and develops security automation scripts in Python."
             }
         ],
@@ -646,7 +646,7 @@
                 "company": "Next Big Thing",
                 "role": "Product Marketing Manager",
                 "start_date": "2023-04-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Develops product positioning and messaging that differentiates our products in the market. Creates go-to-market strategies for new feature launches. Collaborates with the product team, providing market insights and customer feedback to influence the product roadmap."
             }
         ],
@@ -670,7 +670,7 @@
         "first_name": "Jamal",
         "last_name": "Adeboye",
         "birthdate": "1995-09-05",
-        "age": 29,
+        "age": 30,
         "email": "jamal.adeboye@example.com",
         "phone": "+2348012345678",
         "address": "100 Ikoyi Road, Lagos, Nigeria",
@@ -680,7 +680,7 @@
                 "company": "Fintech Nigeria",
                 "role": "Sales Development Representative",
                 "start_date": "2022-06-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Generates new business opportunities by prospecting into mid-market and enterprise accounts in the financial services industry. Utilizes a multi-channel outreach strategy including calls, emails, and LinkedIn. Consistently exceeds monthly target for setting qualified appointments for Account Executives and was named 'SDR of the Quarter' twice."
             }
         ],
@@ -715,7 +715,7 @@
                 "company": "Global Messenger",
                 "role": "Senior iOS Engineer",
                 "start_date": "2020-10-01",
-                "end_date": "2025-08-29",
+                "end_date": "2025-08-30",
                 "description": "Owns the architecture and development of the core chat experience in a messaging app used by hundreds of millions of users. Led the successful adoption of SwiftUI and the Combine framework for new feature development. Improved app start-up time by 25% through performance profiling and optimization."
             }
         ],
@@ -727,6 +727,1783 @@
                 "description": "Graduated with honors. Her graduation project was an award-winning iOS game."
             }
         ]
+    },
+    {
+        "id": 21,
+        "first_name": "Marcus",
+        "last_name": "Nguyen",
+        "birthdate": "1990-04-10",
+        "age": 35,
+        "email": "marcus.nguyen@example.com",
+        "phone": "+17135550107",
+        "address": "123 Bayou Bend, Houston, TX, USA",
+        "skills": [ "Azure", "Cloud Architecture", "Terraform", "PowerShell", "Azure DevOps", "Security Center", "Virtual Networks" ],
+        "experiences": [
+            {
+                "company": "Legacy Systems LLC",
+                "role": "IT Systems Administrator",
+                "start_date": "2013-06-01",
+                "end_date": "2017-08-31",
+                "description": "Managed on-premise Windows Server environments, including Active Directory, DNS, and DHCP. Handled hardware provisioning and maintenance."
+            },
+            {
+                "company": "AetherCloud Solutions",
+                "role": "Senior Cloud Engineer",
+                "start_date": "2017-09-01",
+                "end_date": "2025-08-30",
+                "description": "Specializes in designing and implementing scalable and secure cloud infrastructure on Microsoft Azure. Led the migration of a major e-commerce platform from on-premise servers to Azure, resulting in 99.99% uptime and a 30% reduction in operational costs. Automates infrastructure provisioning using Terraform and Azure DevOps pipelines."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Texas A&M University",
+                "degree": "B.S. in Management Information Systems",
+                "year_of_graduation": 2013,
+                "description": "Holds several Azure certifications, including AZ-305: Designing Microsoft Azure Infrastructure Solutions."
+            }
+        ]
+    },
+    {
+        "id": 22,
+        "first_name": "Eva",
+        "last_name": "Novak",
+        "birthdate": "1996-09-18",
+        "age": 28,
+        "email": "eva.novak@example.com",
+        "phone": "+420222333444",
+        "address": "Old Town Square 5, Prague, Czech Republic",
+        "skills": [ "QA Automation", "Selenium", "Cypress", "JavaScript", "Python", "API Testing", "Postman", "Jira", "Test Planning" ],
+        "experiences": [
+            {
+                "company": "Quality First",
+                "role": "Manual QA Tester",
+                "start_date": "2019-02-01",
+                "end_date": "2021-05-31",
+                "description": "Performed manual regression and exploratory testing for web applications. Documented bugs and worked with developers to ensure issues were resolved. Wrote and maintained detailed test cases."
+            },
+            {
+                "company": "AutomateEverything",
+                "role": "QA Automation Engineer",
+                "start_date": "2021-06-01",
+                "end_date": "2025-08-30",
+                "description": "Built and maintained an automated testing framework from scratch using Cypress and JavaScript. Integrated automated tests into the CI/CD pipeline, reducing the regression testing cycle from 2 days to 2 hours. Developed API tests using Postman and Python scripts."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Charles University",
+                "degree": "B.S. in Computer Science",
+                "year_of_graduation": 2018,
+                "description": "Graduated with a focus on software engineering and testing methodologies."
+            }
+        ]
+    },
+    {
+        "id": 23,
+        "first_name": "Javier",
+        "last_name": "Moreno",
+        "birthdate": "1986-11-25",
+        "age": 38,
+        "email": "javier.moreno@example.com",
+        "phone": "+525512345678",
+        "address": "Paseo de la Reforma 222, Mexico City, Mexico",
+        "skills": [ "Head of Product", "Product Vision", "Team Leadership", "P&L Management", "Go-to-Market Strategy", "Stakeholder Alignment", "Public Speaking" ],
+        "experiences": [
+            {
+                "company": "Startup Mex",
+                "role": "Senior Product Manager",
+                "start_date": "2012-04-01",
+                "end_date": "2017-09-30",
+                "description": "Led the product development for a successful fintech application, growing the user base from 10k to 1M. Managed the product roadmap and backlog for a team of 8 engineers."
+            },
+            {
+                "company": "LatAm Tech Unicorn",
+                "role": "Head of Product",
+                "start_date": "2017-10-01",
+                "end_date": "2025-08-30",
+                "description": "Leads a product organization of 30+ product managers and designers across 5 product lines. Responsible for the overall product strategy, vision, and execution. Grew the company's product portfolio, leading to a successful IPO in 2023. Reports directly to the CEO."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Tecnológico de Monterrey",
+                "degree": "MBA",
+                "year_of_graduation": 2012,
+                "description": ""
+            },
+            {
+                "institution": "UNAM",
+                "degree": "B.Eng. in Mechatronics Engineering",
+                "year_of_graduation": 2009,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 24,
+        "first_name": "Kenji",
+        "last_name": "Sato",
+        "birthdate": "1998-02-11",
+        "age": 27,
+        "email": "kenji.sato@example.com",
+        "phone": "+819012345678",
+        "address": "Minato Mirai, Yokohama, Japan",
+        "skills": [ "Business Development", "Lead Generation", "Market Research", "Cold Outreach", "CRM", "Presentation Skills" ],
+        "experiences": [
+            {
+                "company": "Innovate JP",
+                "role": "Business Development Representative",
+                "start_date": "2023-04-01",
+                "end_date": "2025-08-30",
+                "description": "Identifies and nurtures new business opportunities and strategic partnerships in the Japanese market. Conducts initial outreach to potential enterprise clients, qualifies leads, and sets meetings for senior account executives. Exceeded his meeting quota by 30% in the last quarter."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Keio University",
+                "degree": "B.A. in Commerce",
+                "year_of_graduation": 2023,
+                "description": "President of the International Business Club."
+            }
+        ]
+    },
+    {
+        "id": 25,
+        "first_name": "Lucas",
+        "last_name": "Müller",
+        "birthdate": "1992-01-20",
+        "age": 33,
+        "email": "lucas.muller@example.com",
+        "phone": "+4917612345678",
+        "address": "HafenCity, Hamburg, Germany",
+        "skills": [ "Java", "Spring Boot", "Microservices", "Kafka", "Hibernate", "REST APIs", "Maven", "JUnit" ],
+        "experiences": [
+            {
+                "company": "Deutsche Software AG",
+                "role": "Java Developer",
+                "start_date": "2016-09-01",
+                "end_date": "2020-10-31",
+                "description": "Developed backend components for enterprise-level financial software using Java and the Spring Framework. Wrote and maintained unit and integration tests, ensuring high code quality. Participated in the migration of a monolithic application to a microservices architecture."
+            },
+            {
+                "company": "E-Commerce Titans",
+                "role": "Senior Backend Engineer",
+                "start_date": "2020-11-01",
+                "end_date": "2025-08-30",
+                "description": "Designs and develops high-performance, event-driven microservices for an e-commerce platform using Spring Boot and Kafka. Leads a team of four developers, providing technical guidance and mentorship. Implemented a distributed caching layer that significantly improved API response times."
+            }
+        ],
+        "education": [
+            {
+                "institution": "RWTH Aachen University",
+                "degree": "M.S. in Computer Science",
+                "year_of_graduation": 2016,
+                "description": "Thesis on performance optimization in distributed message queues."
+            }
+        ]
+    },
+    {
+        "id": 26,
+        "first_name": "Nia",
+        "last_name": "Williams",
+        "birthdate": "1994-06-30",
+        "age": 31,
+        "email": "nia.williams@example.com",
+        "phone": "+14045550108",
+        "address": "1 Peachtree Center, Atlanta, GA, USA",
+        "skills": [ "User Research", "Usability Testing", "Persona Development", "Journey Mapping", "Qualitative Data Analysis", "User Interviews", "SurveyMonkey" ],
+        "experiences": [
+            {
+                "company": "Digital Agency Pro",
+                "role": "Marketing Assistant",
+                "start_date": "2017-08-01",
+                "end_date": "2019-12-31",
+                "description": "Supported marketing campaigns and conducted basic market research. Gained experience in creating customer surveys and analyzing responses."
+            },
+            {
+                "company": "UserFirst Inc.",
+                "role": "UX Researcher",
+                "start_date": "2020-01-01",
+                "end_date": "2025-08-30",
+                "description": "Leads foundational and tactical user research for a suite of B2B software products. Plans and conducts a variety of research methods, including in-depth interviews, contextual inquiries, and usability tests. Her insights have directly led to a major redesign of the product's core navigation, increasing user satisfaction scores by 20 points."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Georgia Institute of Technology",
+                "degree": "M.S. in Human-Computer Interaction",
+                "year_of_graduation": 2017,
+                "description": ""
+            },
+            {
+                "institution": "Spelman College",
+                "degree": "B.A. in Psychology",
+                "year_of_graduation": 2016,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 27,
+        "first_name": "Omar",
+        "last_name": "Hassan",
+        "birthdate": "1991-03-15",
+        "age": 34,
+        "email": "omar.hassan@example.com",
+        "phone": "+201001234567",
+        "address": "Zamalek, Cairo, Egypt",
+        "skills": [ "Site Reliability Engineering", "SRE", "Kubernetes", "Prometheus", "Terraform", "Go", "Python", "Incident Management", "SLO/SLI" ],
+        "experiences": [
+            {
+                "company": "Regional Hosting Co.",
+                "role": "Linux System Administrator",
+                "start_date": "2015-02-01",
+                "end_date": "2019-03-31",
+                "description": "Managed a fleet of Linux servers, responsible for uptime, patching, and performance tuning. Automated system administration tasks using shell scripting."
+            },
+            {
+                "company": "Global Scale Inc.",
+                "role": "Site Reliability Engineer",
+                "start_date": "2019-04-01",
+                "end_date": "2025-08-30",
+                "description": "Focuses on the reliability, scalability, and performance of a large-scale distributed system. Builds automation tools in Go and Python to reduce operational toil. Defines and monitors Service Level Objectives (SLOs) and error budgets. Serves as the incident commander during critical production issues."
+            }
+        ],
+        "education": [
+            {
+                "institution": "The American University in Cairo",
+                "degree": "B.S. in Computer Engineering",
+                "year_of_graduation": 2014,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 28,
+        "first_name": "Maria",
+        "last_name": "Ivanova",
+        "birthdate": "1997-01-22",
+        "age": 28,
+        "email": "maria.ivanova@example.com",
+        "phone": "+359881234567",
+        "address": "Vitosha Boulevard 100, Sofia, Bulgaria",
+        "skills": [ "Sales Enablement", "Content Creation", "Sales Training", "Onboarding", "Salesforce", "Seismic", "Highspot", "Process Improvement" ],
+        "experiences": [
+            {
+                "company": "Local Tech Firm",
+                "role": "Marketing Coordinator",
+                "start_date": "2020-07-01",
+                "end_date": "2023-01-31",
+                "description": "Created marketing collateral, including case studies and datasheets. Supported the sales team by providing them with up-to-date content and materials."
+            },
+            {
+                "company": "SaaS Growth Corp",
+                "role": "Sales Enablement Manager",
+                "start_date": "2023-02-01",
+                "end_date": "2025-08-30",
+                "description": "Develops and manages the onboarding program for all new sales hires, reducing ramp-up time by 25%. Creates and maintains a central repository of sales content, playbooks, and training materials. Partners with sales leadership to identify and address knowledge gaps in the sales team."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Sofia University St. Kliment Ohridski",
+                "degree": "B.A. in Public Relations",
+                "year_of_graduation": 2020,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 29,
+        "first_name": "Adam",
+        "last_name": "Miller",
+        "birthdate": "1988-08-08",
+        "age": 37,
+        "email": "adam.miller@example.com",
+        "phone": "+13125550109",
+        "address": "1 Wicker Park, Chicago, IL, USA",
+        "skills": [ "Engineering Management", "Team Leadership", "Project Management", "Agile", "System Architecture", "Hiring", "Mentorship", "Budgeting" ],
+        "experiences": [
+            {
+                "company": "Code Solutions",
+                "role": "Senior Software Engineer",
+                "start_date": "2012-01-15",
+                "end_date": "2017-03-31",
+                "description": "Led development on key projects, mentored junior developers, and played a significant role in architectural decisions. Often acted as the tech lead for the team."
+            },
+            {
+                "company": "BuildItRight Inc.",
+                "role": "Engineering Manager",
+                "start_date": "2017-04-01",
+                "end_date": "2025-08-30",
+                "description": "Manages a team of 10 backend and full-stack engineers. Responsible for hiring, performance management, and career development. Ensures the team delivers high-quality software on time by fostering a strong agile culture. Collaborates with product management to align technical strategy with business goals."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of Illinois Urbana-Champaign",
+                "degree": "B.S. in Computer Science",
+                "year_of_graduation": 2011,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 30,
+        "first_name": "Alina",
+        "last_name": "Popescu",
+        "birthdate": "1995-10-05",
+        "age": 29,
+        "email": "alina.popescu@example.com",
+        "phone": "+40721234567",
+        "address": "Victory Avenue, Bucharest, Romania",
+        "skills": [ "Product Marketing", "Go-to-Market Strategy", "Positioning", "Messaging", "Content Creation", "Competitive Analysis", "HubSpot" ],
+        "experiences": [
+            {
+                "company": "Digital Growth Agency",
+                "role": "Content Marketer",
+                "start_date": "2018-08-01",
+                "end_date": "2021-09-30",
+                "description": "Wrote blog posts, whitepapers, and case studies for B2B tech clients. Managed social media channels and email marketing campaigns."
+            },
+            {
+                "company": "Cloud SaaS Inc.",
+                "role": "Product Marketing Manager",
+                "start_date": "2021-10-01",
+                "end_date": "2025-08-30",
+                "description": "Owns the go-to-market strategy for a new AI-powered analytics product. Develops all product messaging, positioning, and sales collateral. Conducts competitive analysis and market research to inform product strategy and sales tactics. The launch she led resulted in 500 new leads in the first three months."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Bucharest University of Economic Studies",
+                "degree": "B.S. in Marketing",
+                "year_of_graduation": 2018,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 31,
+        "first_name": "Finn",
+        "last_name": "Andersen",
+        "birthdate": "1994-01-07",
+        "age": 31,
+        "email": "finn.andersen@example.com",
+        "phone": "+4512345678",
+        "address": "Nyhavn 17, Copenhagen, Denmark",
+        "skills": [ "Vue.js", "Nuxt.js", "JavaScript", "TypeScript", "HTML5", "CSS3", "SASS", "State Management", "Pinia", "REST APIs" ],
+        "experiences": [
+            {
+                "company": "Nordic Web Design",
+                "role": "Web Developer",
+                "start_date": "2018-02-01",
+                "end_date": "2021-06-30",
+                "description": "Built marketing websites and small web applications for clients using HTML, CSS, and jQuery. Gained foundational experience in web development and client communication."
+            },
+            {
+                "company": "GreenTech Solutions",
+                "role": "Frontend Developer",
+                "start_date": "2021-07-01",
+                "end_date": "2025-08-30",
+                "description": "Specializes in building modern, performant, and accessible user interfaces using Vue.js and Nuxt.js. Led the development of a new customer portal, which received positive feedback for its user experience. Actively contributes to the company's internal component library and advocates for frontend best practices."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Technical University of Denmark (DTU)",
+                "degree": "B.Sc. in Software Technology",
+                "year_of_graduation": 2017,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 32,
+        "first_name": "Gabriela",
+        "last_name": "Rojas",
+        "birthdate": "1992-12-12",
+        "age": 32,
+        "email": "gabriela.rojas@example.com",
+        "phone": "+56912345678",
+        "address": "Providencia, Santiago, Chile",
+        "skills": [ "Mid-Market Sales", "Account Executive", "Salesforce", "Sales Cycle Management", "Closing", "SaaS", "Negotiation" ],
+        "experiences": [
+            {
+                "company": "Connect LatAm",
+                "role": "Sales Development Representative",
+                "start_date": "2016-01-15",
+                "end_date": "2018-03-31",
+                "description": "Generated qualified leads for the sales team, consistently exceeding targets. Mastered the art of cold calling and email prospecting."
+            },
+            {
+                "company": "Andes SaaS Corp",
+                "role": "Account Executive, Mid-Market",
+                "start_date": "2018-04-01",
+                "end_date": "2025-08-30",
+                "description": "Manages the full sales cycle for companies with 100-1000 employees. Consistently achieves over 110% of her annual sales quota. Known for her ability to build strong relationships with clients and effectively demonstrate product value, leading to a high closing rate."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Pontificia Universidad Católica de Chile",
+                "degree": "B.S. in Commercial Engineering",
+                "year_of_graduation": 2015,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 33,
+        "first_name": "Yara",
+        "last_name": "Said",
+        "birthdate": "1993-05-19",
+        "age": 32,
+        "email": "yara.said@example.com",
+        "phone": "+9613123456",
+        "address": "Hamra Street, Beirut, Lebanon",
+        "skills": [ "Product Analyst", "SQL", "Tableau", "Python", "Pandas", "Data Analysis", "A/B Testing", "Amplitude", "Mixpanel" ],
+        "experiences": [
+            {
+                "company": "MENA Analytics",
+                "role": "Data Analyst",
+                "start_date": "2016-07-01",
+                "end_date": "2020-09-30",
+                "description": "Performed data analysis for various business units, creating dashboards and reports to track KPIs. Wrote complex SQL queries to extract data from multiple sources."
+            },
+            {
+                "company": "AppGrowth",
+                "role": "Product Analyst",
+                "start_date": "2020-10-01",
+                "end_date": "2025-08-30",
+                "description": "Works within a product squad to analyze user behavior, define metrics, and measure the impact of new features. Designs and analyzes A/B tests to inform product decisions. Her analysis of the user funnel identified a key drop-off point, and the subsequent fix improved conversion by 10%."
+            }
+        ],
+        "education": [
+            {
+                "institution": "American University of Beirut (AUB)",
+                "degree": "B.E. in Computer and Communications Engineering",
+                "year_of_graduation": 2016,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 34,
+        "first_name": "Tom",
+        "last_name": "Van Dyke",
+        "birthdate": "1990-02-02",
+        "age": 35,
+        "email": "tom.vandyke@example.com",
+        "phone": "+31612345678",
+        "address": "Keizersgracht, Amsterdam, Netherlands",
+        "skills": [ "Database Administration", "DBA", "PostgreSQL", "MySQL", "Performance Tuning", "Backup and Recovery", "SQL", "Database Security" ],
+        "experiences": [
+            {
+                "company": "DataSafe B.V.",
+                "role": "Junior Database Administrator",
+                "start_date": "2014-06-01",
+                "end_date": "2018-12-31",
+                "description": "Assisted senior DBAs with daily database maintenance tasks, including backups, restores, and user permissions management. Monitored database performance and health."
+            },
+            {
+                "company": "Global Payments Inc.",
+                "role": "Senior Database Administrator",
+                "start_date": "2019-01-01",
+                "end_date": "2025-08-30",
+                "description": "Responsible for the performance, integrity, and security of a large fleet of PostgreSQL and MySQL databases supporting a high-transaction financial platform. Implemented a new high-availability and disaster recovery strategy, ensuring zero data loss. Reduced critical query times by 40% through expert performance tuning."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Vrije Universiteit Amsterdam",
+                "degree": "B.S. in Computer Science",
+                "year_of_graduation": 2014,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 35,
+        "first_name": "Sofia",
+        "last_name": "Rossi",
+        "birthdate": "1997-11-30",
+        "age": 27,
+        "email": "sofia.rossi@example.com",
+        "phone": "+390212345678",
+        "address": "Via Montenapoleone, Milan, Italy",
+        "skills": [ "UI Design", "Visual Design", "Figma", "Design Systems", "Prototyping", "Typography", "Color Theory", "Adobe Creative Suite" ],
+        "experiences": [
+            {
+                "company": "Milano Design Studio",
+                "role": "Graphic Designer",
+                "start_date": "2020-09-01",
+                "end_date": "2023-02-28",
+                "description": "Created visual assets for digital marketing campaigns, including social media graphics and website banners. Gained strong experience in typography and brand identity."
+            },
+            {
+                "company": "FashionTech App",
+                "role": "UI Designer",
+                "start_date": "2023-03-01",
+                "end_date": "2025-08-30",
+                "description": "Focuses on creating beautiful, intuitive, and pixel-perfect user interfaces for a mobile e-commerce application. Works closely with UX designers and developers to implement high-fidelity designs. Is a key contributor to the company's evolving design system, ensuring visual consistency across the product."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Politecnico di Milano",
+                "degree": "B.S. in Communication Design",
+                "year_of_graduation": 2020,
+                "description": "Thesis on the role of color theory in digital user interfaces."
+            }
+        ]
+    },
+    {
+        "id": 36,
+        "first_name": "Ravi",
+        "last_name": "Kumar",
+        "birthdate": "1996-08-16",
+        "age": 29,
+        "email": "ravi.kumar@example.com",
+        "phone": "+919876543210",
+        "address": "Hitec City, Hyderabad, India",
+        "skills": [ "Data Analyst", "Business Intelligence", "Tableau", "Power BI", "SQL", "ETL", "Data Warehousing", "Python" ],
+        "experiences": [
+            {
+                "company": "InfoServ",
+                "role": "Junior Data Analyst",
+                "start_date": "2019-07-01",
+                "end_date": "2022-09-30",
+                "description": "Supported the sales and marketing teams by building reports and dashboards. Wrote SQL queries to extract data for ad-hoc analysis requests."
+            },
+            {
+                "company": "Insight Analytics",
+                "role": "BI Developer",
+                "start_date": "2022-10-01",
+                "end_date": "2025-08-30",
+                "description": "Designs, develops, and maintains business intelligence solutions using Tableau and Power BI. Builds ETL pipelines to integrate data from various sources into the data warehouse. Works with stakeholders to understand their data needs and delivers actionable insights through interactive dashboards."
+            }
+        ],
+        "education": [
+            {
+                "institution": "National Institute of Technology, Warangal",
+                "degree": "B.Tech. in Electronics and Communication Engineering",
+                "year_of_graduation": 2019,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 37,
+        "first_name": "Anna",
+        "last_name": "Kowalski",
+        "birthdate": "1991-05-14",
+        "age": 34,
+        "email": "anna.kowalski@example.com",
+        "phone": "+48221234567",
+        "address": "Nowy Świat 20, Warsaw, Poland",
+        "skills": [ "Technical Account Management", "TAM", "Customer Relationships", "API Integration", "Troubleshooting", "Project Management", "Jira" ],
+        "experiences": [
+            {
+                "company": "Soft Solutions PL",
+                "role": "Senior Technical Support Specialist",
+                "start_date": "2014-08-01",
+                "end_date": "2019-10-31",
+                "description": "Handled the most complex technical support escalations for enterprise customers. Developed deep product expertise and excellent problem-solving skills."
+            },
+            {
+                "company": "Enterprise Connect",
+                "role": "Technical Account Manager",
+                "start_date": "2019-11-01",
+                "end_date": "2025-08-30",
+                "description": "Serves as the primary technical point of contact for a portfolio of strategic enterprise accounts. Builds strong relationships with customer stakeholders, provides technical guidance, and advocates for their needs within the product team. Manages complex integration projects and ensures a smooth post-sales experience, leading to high customer satisfaction and retention."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Warsaw University of Technology",
+                "degree": "M.Sc. in Telecommunications",
+                "year_of_graduation": 2014,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 38,
+        "first_name": "Jack",
+        "last_name": "Wilson",
+        "birthdate": "1998-09-01",
+        "age": 27,
+        "email": "jack.wilson@example.com",
+        "phone": "+12065550110",
+        "address": "200 Terry Ave N, Seattle, WA, USA",
+        "skills": [ "Python", "Flask", "SQLAlchemy", "PostgreSQL", "REST APIs", "Git", "Docker" ],
+        "experiences": [
+            {
+                "company": "Code Bootcamp",
+                "role": "Student",
+                "start_date": "2022-01-10",
+                "end_date": "2022-07-15",
+                "description": "Completed an intensive 6-month software engineering bootcamp focused on Python and web development."
+            },
+            {
+                "company": "CloudStart",
+                "role": "Junior Backend Developer",
+                "start_date": "2022-08-01",
+                "end_date": "2025-08-30",
+                "description": "Develops and maintains REST API endpoints for a cloud-based application using Python and Flask. Writes unit tests to ensure code reliability and participates in the team's agile scrum process. Is actively learning about system design and scalability from senior engineers."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of Washington",
+                "degree": "B.A. in History",
+                "year_of_graduation": 2021,
+                "description": "Decided to pursue a career in technology after graduation and self-studied programming before attending a bootcamp."
+            }
+        ]
+    },
+    {
+        "id": 39,
+        "first_name": "Elena",
+        "last_name": "Vasileva",
+        "birthdate": "1987-07-20",
+        "age": 38,
+        "email": "elena.vasileva@example.com",
+        "phone": "+380441234567",
+        "address": "Khreshchatyk 1, Kyiv, Ukraine",
+        "skills": [ "Principal Product Manager", "Product Strategy", "Product Vision", "Mentorship", "Cross-functional Leadership", "Market Analysis", "OKRs" ],
+        "experiences": [
+            {
+                "company": "Tech Solutions UA",
+                "role": "Senior Product Manager",
+                "start_date": "2013-02-01",
+                "end_date": "2019-06-30",
+                "description": "Led a successful product line from inception to market leadership, achieving a 50% market share in its category. Mentored junior product managers."
+            },
+            {
+                "company": "Global Innovators",
+                "role": "Principal Product Manager",
+                "start_date": "2019-07-01",
+                "end_date": "2025-08-30",
+                "description": "Acts as an individual contributor at the highest level, tackling the most complex and ambiguous product challenges. Owns the long-term vision and strategy for a new business unit focused on AI. Influences and aligns stakeholders across the entire company, from engineering to the executive team. Her work on a new platform initiative is expected to generate over $100M in new revenue."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Kyiv School of Economics",
+                "degree": "Master's in Economic Analysis",
+                "year_of_graduation": 2012,
+                "description": ""
+            },
+            {
+                "institution": "National Technical University of Ukraine 'Igor Sikorsky Kyiv Polytechnic Institute'",
+                "degree": "B.S. in Applied Mathematics",
+                "year_of_graduation": 2010,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 40,
+        "first_name": "Miguel",
+        "last_name": "Ferreira",
+        "birthdate": "1993-03-25",
+        "age": 32,
+        "email": "miguel.ferreira@example.com",
+        "phone": "+351211234567",
+        "address": "Praça do Comércio, Lisbon, Portugal",
+        "skills": [ "Solutions Architect", "Pre-Sales", "AWS", "Cloud Architecture", "Enterprise Software", "Technical Presentations", "RFP/RFI Response" ],
+        "experiences": [
+            {
+                "company": "Tech Portugal",
+                "role": "Senior Software Engineer",
+                "start_date": "2016-01-10",
+                "end_date": "2020-04-30",
+                "description": "Worked on the core architecture of a complex enterprise application. Gained deep technical knowledge and often assisted the sales team with technical questions from prospective clients."
+            },
+            {
+                "company": "Cloud Innovate EMEA",
+                "role": "Solutions Architect",
+                "start_date": "2020-05-01",
+                "end_date": "2025-08-30",
+                "description": "Partners with the enterprise sales team to provide technical expertise during the sales process. Designs custom solutions and architectures for potential customers, demonstrating how the product can solve their specific business problems. Leads technical workshops and responds to complex RFPs. Is a key driver in winning large, strategic deals."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Instituto Superior Técnico",
+                "degree": "M.Sc. in Computer Science and Engineering",
+                "year_of_graduation": 2015,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 41,
+        "first_name": "Zara",
+        "last_name": "Andersson",
+        "birthdate": "1996-05-02",
+        "age": 29,
+        "email": "zara.andersson@example.com",
+        "phone": "+46812345678",
+        "address": "Drottninggatan, Stockholm, Sweden",
+        "skills": [ "UX Writing", "Microcopy", "Content Strategy", "Tone and Voice", "Copywriting", "Editing", "Figma" ],
+        "experiences": [
+            {
+                "company": "Scandi Media House",
+                "role": "Copywriter",
+                "start_date": "2019-08-01",
+                "end_date": "2022-10-31",
+                "description": "Wrote long-form and short-form copy for marketing websites, advertisements, and social media. Developed a strong understanding of brand voice and storytelling."
+            },
+            {
+                "company": "Fintech App AB",
+                "role": "UX Writer",
+                "start_date": "2022-11-01",
+                "end_date": "2025-08-30",
+                "description": "Crafts clear, concise, and helpful text for user interfaces, including button labels, error messages, and onboarding flows. Collaborates closely with designers and product managers to create intuitive user experiences. Developed and now maintains the company's content style guide, ensuring a consistent voice across the entire product."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Stockholm University",
+                "degree": "B.A. in English and Communication",
+                "year_of_graduation": 2019,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 42,
+        "first_name": "Chen",
+        "last_name": "Li",
+        "birthdate": "1995-11-11",
+        "age": 29,
+        "email": "chen.li@example.com",
+        "phone": "+6591234567",
+        "address": "1 Marina Bay, Singapore",
+        "skills": [ "Machine Learning", "MLOps", "Kubeflow", "Docker", "Python", "TensorFlow", "AWS SageMaker", "CI/CD for ML" ],
+        "experiences": [
+            {
+                "company": "AI Start-Up SG",
+                "role": "Machine Learning Engineer",
+                "start_date": "2019-01-15",
+                "end_date": "2022-03-31",
+                "description": "Developed and trained machine learning models. Wrote Python scripts to deploy models as APIs, but the process was largely manual."
+            },
+            {
+                "company": "Global Tech",
+                "role": "MLOps Engineer",
+                "start_date": "2022-04-01",
+                "end_date": "2025-08-30",
+                "description": "Builds and maintains the platform and infrastructure for deploying, monitoring, and managing machine learning models at scale. Created a standardized CI/CD pipeline for ML using Kubeflow and Jenkins, which automates model training, testing, and deployment. This has reduced the time to deploy a new model from weeks to days."
+            }
+        ],
+        "education": [
+            {
+                "institution": "National University of Singapore (NUS)",
+                "degree": "M.S. in Computer Science",
+                "year_of_graduation": 2018,
+                "description": "Specialization in Artificial Intelligence."
+            },
+            {
+                "institution": "Nanyang Technological University (NTU)",
+                "degree": "B.Eng. in Computer Engineering",
+                "year_of_graduation": 2017,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 43,
+        "first_name": "Laura",
+        "last_name": "Smits",
+        "birthdate": "1989-02-14",
+        "age": 36,
+        "email": "laura.smits@example.com",
+        "phone": "+3221234567",
+        "address": "Grand-Place 1, Brussels, Belgium",
+        "skills": [ "VP of Sales", "Sales Leadership", "Go-to-Market Strategy", "P&L Management", "Team Building", "Enterprise Sales", "International Sales" ],
+        "experiences": [
+            {
+                "company": "Benelux Software",
+                "role": "Sales Director",
+                "start_date": "2014-01-01",
+                "end_date": "2020-06-30",
+                "description": "Led a team of 15 account executives and grew regional revenue by 400% over 6 years. Built the company's sales process from the ground up."
+            },
+            {
+                "company": "HyperScale Europe",
+                "role": "VP of Sales, EMEA",
+                "start_date": "2020-07-01",
+                "end_date": "2025-08-30",
+                "description": "Leads the entire EMEA sales organization of 100+ people, including enterprise sales, mid-market, SDRs, and sales operations. Responsible for a $150M ARR book of business. Designed and executed a new go-to-market strategy that successfully expanded the company into 5 new European markets."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Vlerick Business School",
+                "degree": "Executive MBA",
+                "year_of_graduation": 2018,
+                "description": ""
+            },
+            {
+                "institution": "KU Leuven",
+                "degree": "M.Sc. in Business Engineering",
+                "year_of_graduation": 2012,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 44,
+        "first_name": "Mohammed",
+        "last_name": "Ali",
+        "birthdate": "1994-10-10",
+        "age": 30,
+        "email": "mohammed.ali@example.com",
+        "phone": "+966501234567",
+        "address": "King Fahd Road, Riyadh, Saudi Arabia",
+        "skills": [ "React Native", "JavaScript", "TypeScript", "Redux", "Mobile Development", "API Integration", "Firebase" ],
+        "experiences": [
+            {
+                "company": "KSA Digital",
+                "role": "Web Developer",
+                "start_date": "2017-09-01",
+                "end_date": "2020-12-31",
+                "description": "Developed websites using React. Gained an interest in mobile development and began learning React Native on personal projects."
+            },
+            {
+                "company": "Desert Apps",
+                "role": "Mobile App Developer",
+                "start_date": "2021-01-01",
+                "end_date": "2025-08-30",
+                "description": "Develops cross-platform mobile applications for iOS and Android using React Native. Led the development of a new e-commerce app that was downloaded over 500,000 times in its first six months. Implemented features like push notifications and in-app payments using Firebase and native modules."
+            }
+        ],
+        "education": [
+            {
+                "institution": "King Saud University",
+                "degree": "B.S. in Information Technology",
+                "year_of_graduation": 2017,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 45,
+        "first_name": "Emily",
+        "last_name": "Walker",
+        "birthdate": "1992-04-04",
+        "age": 33,
+        "email": "emily.walker@example.com",
+        "phone": "+12155550111",
+        "address": "1 Independence Hall, Philadelphia, PA, USA",
+        "skills": [ "Product Operations", "Process Improvement", "Jira Administration", "Confluence", "Stakeholder Communication", "Data Analysis", "Project Management" ],
+        "experiences": [
+            {
+                "company": "Philly Tech",
+                "role": "Project Coordinator",
+                "start_date": "2015-06-01",
+                "end_date": "2019-08-31",
+                "description": "Assisted project managers with scheduling, documentation, and stakeholder updates. Became the team's expert in Jira and Confluence."
+            },
+            {
+                "company": "ScaleUp Ops",
+                "role": "Product Operations Manager",
+                "start_date": "2019-09-01",
+                "end_date": "2025-08-30",
+                "description": "Focuses on improving the efficiency and effectiveness of the product development process. Manages the product team's tools (Jira, Figma, etc.), standardizes processes for roadmapping and feedback collection, and facilitates communication between product and other departments. Her work has increased the predictability of product delivery by 40%."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Drexel University",
+                "degree": "B.S. in Business and Engineering",
+                "year_of_graduation": 2015,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 46,
+        "first_name": "Noah",
+        "last_name": "Tremblay",
+        "birthdate": "1999-01-15",
+        "age": 26,
+        "email": "noah.tremblay@example.com",
+        "phone": "+16045550112",
+        "address": "1 Robson Street, Vancouver, BC, Canada",
+        "skills": [ "Sales Development", "SDR", "Salesforce", "Outreach", "Lead Generation", "Cold Calling", "Email Prospecting" ],
+        "experiences": [
+            {
+                "company": "VanTech",
+                "role": "Sales Development Representative",
+                "start_date": "2023-07-01",
+                "end_date": "2025-08-30",
+                "description": "Responsible for generating qualified leads for the enterprise sales team in the North American market. Uses a combination of cold calls, personalized emails, and social selling to connect with key decision-makers. Was promoted to SDR II after just one year for consistently exceeding his monthly quota."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of British Columbia",
+                "degree": "B.A. in Political Science",
+                "year_of_graduation": 2023,
+                "description": "Captain of the university's hockey team."
+            }
+        ]
+    },
+    {
+        "id": 47,
+        "first_name": "Tunde",
+        "last_name": "Bello",
+        "birthdate": "1991-09-20",
+        "age": 33,
+        "email": "tunde.bello@example.com",
+        "phone": "+23411234567",
+        "address": "Victoria Island, Lagos, Nigeria",
+        "skills": [ "AI Research", "Deep Learning", "PyTorch", "Computer Vision", "NLP", "Python", "Scientific Writing", "Algorithms" ],
+        "experiences": [
+            {
+                "company": "African AI Institute",
+                "role": "Postdoctoral Researcher",
+                "start_date": "2020-01-10",
+                "end_date": "2023-03-31",
+                "description": "Conducted research in the field of computer vision, focusing on low-resource settings. Published three papers in top-tier AI conferences (CVPR, NeurIPS)."
+            },
+            {
+                "company": "Future Vision Labs",
+                "role": "AI Research Scientist",
+                "start_date": "2023-04-01",
+                "end_date": "2025-08-30",
+                "description": "Works in an R&D lab developing novel deep learning models for image and text understanding. His current research on efficient transformer architectures has the potential to significantly reduce the computational cost of large language models. Collaborates with product teams to translate cutting-edge research into viable product features."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Carnegie Mellon University",
+                "degree": "Ph.D. in Machine Learning",
+                "year_of_graduation": 2019,
+                "description": "Thesis on 'Self-Supervised Learning for Natural Language Understanding'."
+            },
+            {
+                "institution": "University of Ibadan",
+                "degree": "B.Sc. in Computer Science",
+                "year_of_graduation": 2014,
+                "description": "Graduated First Class Honours."
+            }
+        ]
+    },
+    {
+        "id": 48,
+        "first_name": "Astrid",
+        "last_name": "Johansen",
+        "birthdate": "1993-11-08",
+        "age": 31,
+        "email": "astrid.johansen@example.com",
+        "phone": "+4722345678",
+        "address": "Karl Johans gate, Oslo, Norway",
+        "skills": [ "Design Systems", "UI Design", "Figma", "Component Libraries", "Documentation", "Collaboration", "CSS Architecture" ],
+        "experiences": [
+            {
+                "company": "Oslo Digital",
+                "role": "UI/UX Designer",
+                "start_date": "2017-06-01",
+                "end_date": "2021-08-31",
+                "description": "Worked on various client projects, designing user interfaces and contributing to an informal component library. Saw the need for a more systematic approach to design."
+            },
+            {
+                "company": "Global Scale Software",
+                "role": "Design System Lead",
+                "start_date": "2021-09-01",
+                "end_date": "2025-08-30",
+                "description": "Leads a dedicated team responsible for building and maintaining the company's cross-platform design system. Owns the Figma component library, documentation site, and works closely with engineers to ensure design tokens and components are implemented correctly. Her team's work has increased design and development velocity by over 30%."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Oslo School of Architecture and Design",
+                "degree": "M.A. in Interaction Design",
+                "year_of_graduation": 2017,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 49,
+        "first_name": "Diego",
+        "last_name": "Gonzalez",
+        "birthdate": "1995-07-27",
+        "age": 30,
+        "email": "diego.gonzalez@example.com",
+        "phone": "+541112345678",
+        "address": "Avenida Corrientes, Buenos Aires, Argentina",
+        "skills": [ "Enterprise Account Executive", "Salesforce", "Complex Sales Cycles", "Value Selling", "Negotiation", "C-Level Relationships", "SaaS" ],
+        "experiences": [
+            {
+                "company": "BA Software",
+                "role": "Account Manager",
+                "start_date": "2018-02-01",
+                "end_date": "2021-05-31",
+                "description": "Managed a portfolio of existing mid-market customers, focusing on renewals and upsells. Built strong foundational skills in client relationship management."
+            },
+            {
+                "company": "Unicorn LatAm",
+                "role": "Enterprise Account Executive",
+                "start_date": "2021-06-01",
+                "end_date": "2025-08-30",
+                "description": "Responsible for new business acquisition in the enterprise segment (5000+ employees). Manages complex, multi-stakeholder sales cycles that often last 6-12 months. Consistently exceeds a $1.5M annual quota by building strong relationships with C-level executives and articulating a compelling business value proposition."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Universidad de Buenos Aires (UBA)",
+                "degree": "Licenciatura in Business Administration",
+                "year_of_graduation": 2017,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 50,
+        "first_name": "Saanvi",
+        "last_name": "Rao",
+        "birthdate": "1994-04-14",
+        "age": 31,
+        "email": "saanvi.rao@example.com",
+        "phone": "+912212345678",
+        "address": "Marine Drive, Mumbai, India",
+        "skills": [ "Ruby on Rails", "Ruby", "PostgreSQL", "RSpec", "Sidekiq", "REST APIs", "Heroku" ],
+        "experiences": [
+            {
+                "company": "Mumbai Techies",
+                "role": "Junior Web Developer",
+                "start_date": "2017-07-01",
+                "end_date": "2020-09-30",
+                "description": "Assisted in the development of web applications using Ruby on Rails. Wrote model and controller tests using RSpec. Gained experience in the full web development lifecycle."
+            },
+            {
+                "company": "Global Commerce Platform",
+                "role": "Full-Stack Engineer",
+                "start_date": "2020-10-01",
+                "end_date": "2025-08-30",
+                "description": "Develops and maintains features for a large-scale e-commerce platform built on Ruby on Rails. Works on both the backend API and the server-rendered frontend. Implemented a background job processing system using Sidekiq and Redis to handle asynchronous tasks, improving application responsiveness."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Veermata Jijabai Technological Institute (VJTI)",
+                "degree": "B.Tech. in Information Technology",
+                "year_of_graduation": 2017,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 51,
+        "first_name": "Oliver",
+        "last_name": "Smith",
+        "birthdate": "1997-03-21",
+        "age": 28,
+        "email": "oliver.smith@example.com",
+        "phone": "+14165550113",
+        "address": "1 Queen St E, Toronto, ON, Canada",
+        "skills": [ "Associate Product Manager", "Jira", "User Stories", "Market Research", "Data Analysis", "Agile", "SQL" ],
+        "experiences": [
+            {
+                "company": "BrightLeaf Tech",
+                "role": "Product Analyst",
+                "start_date": "2021-06-01",
+                "end_date": "2023-08-31",
+                "description": "Supported the product team by analyzing user data with SQL and Tableau to identify trends and opportunities. Helped manage the product backlog and write user stories."
+            },
+            {
+                "company": "NextStep SaaS",
+                "role": "Associate Product Manager",
+                "start_date": "2023-09-01",
+                "end_date": "2025-08-30",
+                "description": "Manages a specific feature set within a larger B2B SaaS product. Works with a dedicated scrum team to prioritize work, define requirements, and ship features. Conducts competitive analysis and user interviews to inform feature development. Is being mentored by a senior PM to grow into a full Product Manager role."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Queen's University",
+                "degree": "Bachelor of Commerce",
+                "year_of_graduation": 2021,
+                "description": "Specialized in marketing and strategy."
+            }
+        ]
+    },
+    {
+        "id": 52,
+        "first_name": "Tatiana",
+        "last_name": "Morozova",
+        "birthdate": "1992-08-11",
+        "age": 33,
+        "email": "tatiana.morozova@example.com",
+        "phone": "+78121234567",
+        "address": "Nevsky Prospekt, Saint Petersburg, Russia",
+        "skills": [ "Sales Operations", "Salesforce Administration", "Data Analysis", "Forecasting", "Process Improvement", "Excel", "SQL" ],
+        "experiences": [
+            {
+                "company": "Euro Data Corp",
+                "role": "Sales Analyst",
+                "start_date": "2015-07-01",
+                "end_date": "2019-12-31",
+                "description": "Created sales reports and dashboards. Analyzed sales performance data to identify trends. Assisted with sales territory planning and quota setting."
+            },
+            {
+                "company": "Global Sales Force",
+                "role": "Sales Operations Manager",
+                "start_date": "2020-01-01",
+                "end_date": "2025-08-30",
+                "description": "Manages the sales technology stack, including Salesforce CRM. Owns the sales forecasting process and provides key insights to sales leadership. Designs and implements new processes to improve sales team efficiency and productivity. Built a new lead routing system that decreased lead response time by 50%."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Saint Petersburg State University",
+                "degree": "B.S. in Applied Mathematics and Informatics",
+                "year_of_graduation": 2015,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 53,
+        "first_name": "Kevin",
+        "last_name": "Baker",
+        "birthdate": "1989-06-06",
+        "age": 36,
+        "email": "kevin.baker@example.com",
+        "phone": "+15125550114",
+        "address": "301 Congress Ave, Austin, TX, USA",
+        "skills": [ "Cloud Architecture", "AWS", "Solution Design", "Serverless", "Microservices", "Well-Architected Framework", "Cost Optimization" ],
+        "experiences": [
+            {
+                "company": "Austin Cloud Co.",
+                "role": "Senior DevOps Engineer",
+                "start_date": "2013-09-01",
+                "end_date": "2019-02-28",
+                "description": "Built CI/CD pipelines and managed infrastructure on AWS. Gained deep hands-on experience with a wide range of AWS services."
+            },
+            {
+                "company": "Enterprise Cloud Partners",
+                "role": "Cloud Architect",
+                "start_date": "2019-03-01",
+                "end_date": "2025-08-30",
+                "description": "Designs robust, secure, and scalable cloud solutions for enterprise clients on AWS. Leads architectural design sessions and ensures solutions adhere to the AWS Well-Architected Framework. Specializes in serverless and microservices architectures. Recently designed a solution that saved a major client over $500k annually in cloud spending."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of Texas at Austin",
+                "degree": "B.S. in Computer Science",
+                "year_of_graduation": 2013,
+                "description": "Holds AWS Certified Solutions Architect - Professional certification."
+            }
+        ]
+    },
+    {
+        "id": 54,
+        "first_name": "Ananya",
+        "last_name": "Nair",
+        "birthdate": "1996-02-28",
+        "age": 29,
+        "email": "ananya.nair@example.com",
+        "phone": "+911112345678",
+        "address": "Connaught Place, New Delhi, India",
+        "skills": [ "Group Product Manager", "Team Management", "Product Strategy", "Roadmap Planning", "Mentorship", "Cross-functional Leadership" ],
+        "experiences": [
+            {
+                "company": "Delhi Digital",
+                "role": "Product Manager",
+                "start_date": "2018-07-01",
+                "end_date": "2022-09-30",
+                "description": "Managed the entire lifecycle of a B2C product, from ideation to launch and iteration. Successfully grew the product to 500k monthly active users."
+            },
+            {
+                "company": "IndiaMart Inc.",
+                "role": "Group Product Manager",
+                "start_date": "2022-10-01",
+                "end_date": "2025-08-30",
+                "description": "Leads a team of 3 product managers responsible for the company's core marketplace platform. Is a 'player-coach' who both manages her team and owns a strategic product area. Responsible for setting the overall strategy for her group and ensuring her team is executing effectively. Reports to the Director of Product."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Indian Institute of Management Bangalore (IIM Bangalore)",
+                "degree": "Post Graduate Programme in Management (MBA)",
+                "year_of_graduation": 2018,
+                "description": ""
+            },
+            {
+                "institution": "Delhi Technological University (DTU)",
+                "degree": "B.E. in Computer Engineering",
+                "year_of_graduation": 2016,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 55,
+        "first_name": "Brandon",
+        "last_name": "Lee",
+        "birthdate": "1997-12-10",
+        "age": 27,
+        "email": "brandon.lee@example.com",
+        "phone": "+13105550115",
+        "address": "1 Silicon Beach, Los Angeles, CA, USA",
+        "skills": [ "Inside Sales", "SaaS", "HubSpot", "CRM", "Lead Qualification", "Product Demonstrations", "Closing" ],
+        "experiences": [
+            {
+                "company": "LA Startup",
+                "role": "Sales Intern",
+                "start_date": "2022-01-10",
+                "end_date": "2022-05-31",
+                "description": "Assisted the sales team with lead research and data entry in the CRM."
+            },
+            {
+                "company": "SMB SaaS Solutions",
+                "role": "Inside Sales Representative",
+                "start_date": "2022-06-01",
+                "end_date": "2025-08-30",
+                "description": "Manages the full sales cycle for small and medium-sized businesses (SMBs). Responsible for lead qualification, product demonstrations, and closing new deals. Has a high-volume sales motion, often closing multiple deals per week. Consistently exceeds his monthly revenue targets."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of Southern California (USC)",
+                "degree": "B.S. in Business Administration",
+                "year_of_graduation": 2022,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 56,
+        "first_name": "Alicja",
+        "last_name": "Zielińska",
+        "birthdate": "1994-07-07",
+        "age": 31,
+        "email": "alicja.zielinska@example.com",
+        "phone": "+48501234567",
+        "address": "Old Market Square, Poznań, Poland",
+        "skills": [ "Frontend Development", "Angular", "TypeScript", "RxJS", "NgRx", "CSS", "HTML", "Unit Testing" ],
+        "experiences": [
+            {
+                "company": "Poznan Software House",
+                "role": "Junior Frontend Developer",
+                "start_date": "2017-08-15",
+                "end_date": "2020-11-30",
+                "description": "Developed user interfaces for various client projects using AngularJS and later Angular. Gained strong experience in building complex single-page applications."
+            },
+            {
+                "company": "Enterprise App Co.",
+                "role": "Senior Angular Developer",
+                "start_date": "2020-12-01",
+                "end_date": "2025-08-30",
+                "description": "Specializes in building large-scale enterprise applications using Angular, TypeScript, and RxJS. Leads the development of the main dashboard component, which handles complex, real-time data streams. Advocates for best practices in state management using NgRx and writes extensive unit tests to ensure application stability."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Poznań University of Technology",
+                "degree": "B.Sc. in Computer Science",
+                "year_of_graduation": 2017,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 57,
+        "first_name": "Santiago",
+        "last_name": "Reyes",
+        "birthdate": "1991-01-01",
+        "age": 34,
+        "email": "santiago.reyes@example.com",
+        "phone": "+573101234567",
+        "address": "Carrera 7, Bogotá, Colombia",
+        "skills": [ "Renewal Management", "Customer Retention", "Salesforce", "Negotiation", "Account Management", "SaaS" ],
+        "experiences": [
+            {
+                "company": "Bogota Tech",
+                "role": "Customer Support Lead",
+                "start_date": "2014-06-01",
+                "end_date": "2018-09-30",
+                "description": "Led a team of support specialists and was responsible for customer satisfaction and handling escalations. Gained a deep understanding of customer needs and pain points."
+            },
+            {
+                "company": "SaaS LatAm",
+                "role": "Renewal Manager",
+                "start_date": "2018-10-01",
+                "end_date": "2025-08-30",
+                "description": "Manages a large portfolio of existing customer accounts with a focus on contract renewals and preventing churn. Proactively engages with customers ahead of their renewal date to ensure they are getting value from the product. Negotiates renewal terms and consistently achieves a net revenue retention rate of over 110%."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Universidad de los Andes",
+                "degree": "B.S. in Industrial Engineering",
+                "year_of_graduation": 2014,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 58,
+        "first_name": "Freya",
+        "last_name": "Berg",
+        "birthdate": "1998-04-12",
+        "age": 27,
+        "email": "freya.berg@example.com",
+        "phone": "+4791234567",
+        "address": "Bryggen, Bergen, Norway",
+        "skills": [ "Junior UI/UX Designer", "Figma", "Wireframing", "Prototyping", "User Research", "Adobe Illustrator" ],
+        "experiences": [
+            {
+                "company": "Fjord Designs",
+                "role": "Design Intern",
+                "start_date": "2022-09-01",
+                "end_date": "2023-02-28",
+                "description": "Assisted senior designers with creating wireframes, user flows, and visual assets for various projects."
+            },
+            {
+                "company": "Norway Apps",
+                "role": "Junior Product Designer",
+                "start_date": "2023-03-01",
+                "end_date": "2025-08-30",
+                "description": "Works as part of a product team to design new features for a mobile application. Conducts user research, creates wireframes and high-fidelity prototypes in Figma, and collaborates with engineers to ensure designs are implemented correctly. Is actively learning about design systems and advanced prototyping."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Westerdals Institute for Film and Media",
+                "degree": "B.A. in Interaction Design",
+                "year_of_graduation": 2022,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 59,
+        "first_name": "Khaled",
+        "last_name": "Ibrahim",
+        "birthdate": "1990-10-25",
+        "age": 34,
+        "email": "khaled.ibrahim@example.com",
+        "phone": "+971521234567",
+        "address": "Jumeirah Beach Residence, Dubai, UAE",
+        "skills": [ "Lead Frontend Engineer", "React", "TypeScript", "Team Leadership", "Code Reviews", "Performance Optimization", "Webpack" ],
+        "experiences": [
+            {
+                "company": "Dubai Web Solutions",
+                "role": "Frontend Developer",
+                "start_date": "2014-08-01",
+                "end_date": "2019-01-31",
+                "description": "Built responsive user interfaces using React and JavaScript. Became the go-to person on the team for complex UI challenges."
+            },
+            {
+                "company": "MENA Fintech",
+                "role": "Lead Frontend Engineer",
+                "start_date": "2019-02-01",
+                "end_date": "2025-08-30",
+                "description": "Leads a team of 6 frontend engineers responsible for a complex financial trading platform. Sets the technical direction for the frontend, conducts code reviews, and mentors team members. Is hands-on and still contributes code to critical features. Led a major performance optimization initiative that reduced page load times by 50%."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Khalifa University",
+                "degree": "B.Sc. in Computer Engineering",
+                "year_of_graduation": 2014,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 60,
+        "first_name": "Zoe",
+        "last_name": "Papadopoulos",
+        "birthdate": "1992-09-09",
+        "age": 33,
+        "email": "zoe.papadopoulos@example.com",
+        "phone": "+302101234567",
+        "address": "Plaka, Athens, Greece",
+        "skills": [ "Channel Partner Manager", "Partner Ecosystem", "Business Development", "Relationship Management", "Go-to-Market", "Salesforce" ],
+        "experiences": [
+            {
+                "company": "Hellas Tech",
+                "role": "Account Manager",
+                "start_date": "2015-06-10",
+                "end_date": "2019-08-31",
+                "description": "Managed direct sales accounts and built strong customer relationships. Gained experience in sales and negotiation."
+            },
+            {
+                "company": "Mediterranean Partners",
+                "role": "Channel Manager",
+                "start_date": "2019-09-01",
+                "end_date": "2025-08-30",
+                "description": "Manages and develops a network of channel partners, including resellers and system integrators, across Southern Europe. Responsible for recruiting, onboarding, and enabling partners to sell the company's products. Develops joint business plans and co-marketing activities to drive channel revenue. Grew partner-sourced revenue by 50% year-over-year."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Athens University of Economics and Business",
+                "degree": "B.Sc. in Business Administration",
+                "year_of_graduation": 2015,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 61,
+        "first_name": "Alex",
+        "last_name": "Chen",
+        "birthdate": "1995-02-18",
+        "age": 30,
+        "email": "alex.chen@example.com",
+        "phone": "+886912345678",
+        "address": "Xinyi District, Taipei, Taiwan",
+        "skills": [ "Principal Software Engineer", "System Design", "Architecture", "Scalability", "Distributed Systems", "Go", "Python", "Mentorship" ],
+        "experiences": [
+            {
+                "company": "Taipei Software House",
+                "role": "Senior Software Engineer",
+                "start_date": "2018-07-01",
+                "end_date": "2022-12-31",
+                "description": "Led the development of several key microservices and was instrumental in setting technical standards for the team."
+            },
+            {
+                "company": "Global Data Infrastructure",
+                "role": "Principal Engineer",
+                "start_date": "2023-01-01",
+                "end_date": "2025-08-30",
+                "description": "Acts as a top-level individual contributor, responsible for the architecture of the entire data platform. Solves the most complex technical challenges related to scalability and reliability. Mentors senior and staff engineers across multiple teams. Their work on a new data storage engine is projected to reduce infrastructure costs by millions of dollars per year."
+            }
+        ],
+        "education": [
+            {
+                "institution": "National Taiwan University",
+                "degree": "M.S. in Computer Science and Information Engineering",
+                "year_of_graduation": 2018,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 62,
+        "first_name": "Heidi",
+        "last_name": "Meyer",
+        "birthdate": "1991-04-20",
+        "age": 34,
+        "email": "heidi.meyer@example.com",
+        "phone": "+41441234567",
+        "address": "Bahnhofstrasse, Zurich, Switzerland",
+        "skills": [ "Head of Sales", "Sales Leadership", "International Sales", "Team Building", "Revenue Growth", "Sales Strategy", "Salesforce" ],
+        "experiences": [
+            {
+                "company": "Swiss Fintech",
+                "role": "Enterprise Account Executive",
+                "start_date": "2015-01-15",
+                "end_date": "2019-06-30",
+                "description": "Top-performing salesperson, consistently exceeding quota by selling to large financial institutions in the DACH region."
+            },
+            {
+                "company": "Alpine Growth AG",
+                "role": "Head of Sales",
+                "start_date": "2019-07-01",
+                "end_date": "2025-08-30",
+                "description": "Leads the entire sales organization for a high-growth B2B SaaS company. Grew the sales team from 5 to 50 people and increased annual recurring revenue from $2M to $30M. Built a scalable and repeatable sales process and fostered a high-performance culture. Reports to the CEO."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of St. Gallen (HSG)",
+                "degree": "M.A. in Banking and Finance",
+                "year_of_graduation": 2014,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 63,
+        "first_name": "Isaac",
+        "last_name": "Cohen",
+        "birthdate": "1996-10-30",
+        "age": 28,
+        "email": "isaac.cohen@example.com",
+        "phone": "+972521234567",
+        "address": "Neve Tzedek, Tel Aviv, Israel",
+        "skills": [ "Growth Product Manager", "A/B Testing", "Data Analysis", "SQL", "User Acquisition", "Conversion Rate Optimization", "Amplitude" ],
+        "experiences": [
+            {
+                "company": "Start-Up Nation Central",
+                "role": "Marketing Analyst",
+                "start_date": "2020-02-01",
+                "end_date": "2023-05-31",
+                "description": "Analyzed marketing campaign data to measure ROI. Became proficient in SQL and data visualization tools."
+            },
+            {
+                "company": "MobileGrowth Ltd.",
+                "role": "Growth PM",
+                "start_date": "2023-06-01",
+                "end_date": "2025-08-30",
+                "description": "Leads a cross-functional squad focused on driving user growth for a B2C mobile app. Owns the experimentation roadmap for user acquisition and activation. Launched a new referral program that increased new user sign-ups by 25%. Constantly analyzes the user funnel to identify opportunities for optimization."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Reichman University (IDC Herzliya)",
+                "degree": "B.A. in Business Administration and Economics",
+                "year_of_graduation": 2019,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 64,
+        "first_name": "Anya",
+        "last_name": "Petrovic",
+        "birthdate": "1993-08-28",
+        "age": 32,
+        "email": "anya.petrovic@example.com",
+        "phone": "+381641234567",
+        "address": "Knez Mihailova, Belgrade, Serbia",
+        "skills": [ "Data Science", "Natural Language Processing", "NLP", "Python", "spaCy", "Hugging Face Transformers", "scikit-learn", "SQL" ],
+        "experiences": [
+            {
+                "company": "Balkan Analytics",
+                "role": "Data Analyst",
+                "start_date": "2016-09-01",
+                "end_date": "2020-01-31",
+                "description": "Cleaned and analyzed data, built dashboards, and gained strong SQL and Python skills. Developed an interest in unstructured text data."
+            },
+            {
+                "company": "AI Language Solutions",
+                "role": "Data Scientist, NLP",
+                "start_date": "2020-02-01",
+                "end_date": "2025-08-30",
+                "description": "Specializes in building machine learning models for natural language processing tasks. Developed a sentiment analysis model that is used to analyze customer feedback at scale. Currently working on a named entity recognition (NER) system to extract structured information from legal documents using transformer-based models."
+            }
+        ],
+        "education": [
+            {
+                "institution": "University of Belgrade, School of Electrical Engineering",
+                "degree": "M.Sc. in Computer Science",
+                "year_of_graduation": 2016,
+                "description": "Master's thesis on text classification algorithms."
+            }
+        ]
+    },
+    {
+        "id": 65,
+        "first_name": "Chris",
+        "last_name": "Thompson",
+        "birthdate": "1990-12-12",
+        "age": 34,
+        "email": "chris.thompson@example.com",
+        "phone": "+19195550116",
+        "address": "1 Research Triangle, Raleigh, NC, USA",
+        "skills": [ "C#", ".NET", "ASP.NET Core", "Entity Framework", "Azure", "SQL Server", "Web APIs" ],
+        "experiences": [
+            {
+                "company": "Carolina Code",
+                "role": "Software Developer",
+                "start_date": "2014-07-15",
+                "end_date": "2018-09-30",
+                "description": "Developed web applications and services using the Microsoft technology stack, including C# and ASP.NET."
+            },
+            {
+                "company": "Enterprise Logic Inc.",
+                "role": "Senior .NET Developer",
+                "start_date": "2018-10-01",
+                "end_date": "2025-08-30",
+                "description": "Builds and maintains backend services for large-scale enterprise systems using .NET Core and C#. Has extensive experience with Entity Framework for data access and deploying applications to Azure App Service. Leads the development of new Web APIs and mentors junior developers on the team."
+            }
+        ],
+        "education": [
+            {
+                "institution": "North Carolina State University",
+                "degree": "B.S. in Computer Science",
+                "year_of_graduation": 2014,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 66,
+        "first_name": "Ji-woo",
+        "last_name": "Park",
+        "birthdate": "1998-05-20",
+        "age": 27,
+        "email": "jiwoo.park@example.com",
+        "phone": "+821012345678",
+        "address": "Busan, South Korea",
+        "skills": [ "Customer Success Associate", "Zendesk", "Client Onboarding", "Customer Support", "Problem Solving", "Communication" ],
+        "experiences": [
+            {
+                "company": "Seoul Tech Support",
+                "role": "Customer Service Representative",
+                "start_date": "2022-08-01",
+                "end_date": "2024-02-29",
+                "description": "Provided frontline support for a software product, answering customer questions and troubleshooting issues via email and chat."
+            },
+            {
+                "company": "K-SaaS",
+                "role": "Customer Success Associate",
+                "start_date": "2024-03-01",
+                "end_date": "2025-08-30",
+                "description": "Manages a portfolio of small business customers, ensuring they are successfully onboarded and getting value from the product. Proactively reaches out to customers to provide training and support. Is responsible for driving product adoption and customer satisfaction within her assigned accounts."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Pusan National University",
+                "degree": "B.A. in English Language and Literature",
+                "year_of_graduation": 2022,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 67,
+        "first_name": "Mustafa",
+        "last_name": "Yilmaz",
+        "birthdate": "1992-02-02",
+        "age": 33,
+        "email": "mustafa.yilmaz@example.com",
+        "phone": "+905321234567",
+        "address": "İstiklal Avenue, Istanbul, Turkey",
+        "skills": [ "Security Analyst", "SIEM", "Vulnerability Management", "Incident Response", "Network Security", "Firewalls", "CISSP" ],
+        "experiences": [
+            {
+                "company": "Bosphorus IT",
+                "role": "IT Support Specialist",
+                "start_date": "2016-01-10",
+                "end_date": "2019-06-30",
+                "description": "Provided general IT support and managed network devices. Developed a strong interest in cybersecurity."
+            },
+            {
+                "company": "Anatolian Cyber Defense",
+                "role": "Cybersecurity Analyst",
+                "start_date": "2019-07-01",
+                "end_date": "2025-08-30",
+                "description": "Monitors the corporate network for security threats using SIEM and other security tools. Conducts vulnerability scans and works with system owners to remediate findings. Participates in the incident response process, analyzing and containing security incidents. Helps develop and enforce security policies."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Middle East Technical University (METU)",
+                "degree": "B.S. in Computer Engineering",
+                "year_of_graduation": 2015,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 68,
+        "first_name": "Chiamaka",
+        "last_name": "Okafor",
+        "birthdate": "1994-03-01",
+        "age": 31,
+        "email": "chiamaka.okafor@example.com",
+        "phone": "+2348123456789",
+        "address": "Abuja, Nigeria",
+        "skills": [ "Senior Product Manager", "B2B SaaS", "Roadmap Planning", "Agile", "User Research", "Jira", "Stakeholder Management" ],
+        "experiences": [
+            {
+                "company": "Naija Innovate",
+                "role": "Associate Product Manager",
+                "start_date": "2018-07-15",
+                "end_date": "2021-09-30",
+                "description": "Managed a feature set for a logistics software, wrote user stories, and worked with the engineering team to deliver features."
+            },
+            {
+                "company": "AfricaConnect Tech",
+                "role": "Senior Product Manager",
+                "start_date": "2021-10-01",
+                "end_date": "2025-08-30",
+                "description": "Owns the product strategy and roadmap for a B2B SaaS platform focused on the African market. Leads a cross-functional team to discover and deliver solutions that solve customer problems. Conducts extensive user research and data analysis to inform product decisions. Successfully launched a new product module that increased customer retention by 15%."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Covenant University",
+                "degree": "B.Eng. in Information and Communication Engineering",
+                "year_of_graduation": 2017,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 69,
+        "first_name": "Paul",
+        "last_name": "Schneider",
+        "birthdate": "1990-06-16",
+        "age": 35,
+        "email": "paul.schneider@example.com",
+        "phone": "+4915112345678",
+        "address": "Munich, Germany",
+        "skills": [ "Head of Customer Success", "Team Leadership", "Customer Retention", "Net Revenue Retention (NRR)", "Gainsight", "Salesforce", "QBRs" ],
+        "experiences": [
+            {
+                "company": "Bavarian SaaS",
+                "role": "Customer Success Manager",
+                "start_date": "2014-08-01",
+                "end_date": "2019-12-31",
+                "description": "Managed a portfolio of enterprise accounts, ensuring high customer satisfaction and retention. Became a team lead and mentored new CSMs."
+            },
+            {
+                "company": "Global Success Co.",
+                "role": "Head of Customer Success, DACH",
+                "start_date": "2020-01-01",
+                "end_date": "2025-08-30",
+                "description": "Leads a team of 20 Customer Success Managers covering Germany, Austria, and Switzerland. Responsible for the overall health and retention of the customer base in the region. Implemented a new customer health scoring system in Gainsight and a structured process for quarterly business reviews (QBRs). Grew the region's NRR from 105% to 125%."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Ludwig Maximilian University of Munich",
+                "degree": "B.A. in Business Administration",
+                "year_of_graduation": 2014,
+                "description": ""
+            }
+        ]
+    },
+    {
+        "id": 70,
+        "first_name": "Thi",
+        "last_name": "Nguyen",
+        "birthdate": "1997-08-22",
+        "age": 28,
+        "email": "thi.nguyen@example.com",
+        "phone": "+84912345678",
+        "address": "District 1, Ho Chi Minh City, Vietnam",
+        "skills": [ "Data Engineer", "ETL", "Python", "Airflow", "SQL", "BigQuery", "Data Modeling", "Looker" ],
+        "experiences": [
+            {
+                "company": "Saigon Data Solutions",
+                "role": "Data Analyst",
+                "start_date": "2020-07-01",
+                "end_date": "2023-01-31",
+                "description": "Wrote SQL queries to support business analysis and built dashboards in Looker. Gained experience in data cleaning and transformation."
+            },
+            {
+                "company": "VinaTech",
+                "role": "Data Engineer",
+                "start_date": "2023-02-01",
+                "end_date": "2025-08-30",
+                "description": "Builds and maintains data pipelines using Python, SQL, and Airflow to move data into Google BigQuery. Works closely with data analysts and data scientists to understand their data requirements. Designs and implements data models to support business intelligence and analytics. Is currently working on a project to improve data pipeline reliability and performance."
+            }
+        ],
+        "education": [
+            {
+                "institution": "Ho Chi Minh City University of Technology",
+                "degree": "B.Eng. in Computer Science",
+                "year_of_graduation": 2020,
+                "description": ""
+            }
+        ]
     }
 ]
-

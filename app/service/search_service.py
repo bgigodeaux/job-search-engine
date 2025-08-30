@@ -19,7 +19,7 @@ from app.model.schemas import (
 
 logger = logging.getLogger(__name__)
 
-SKILL_MATCH_THRESHOLD = 0.6  # Candidate must have at least 60% of the job's required skills
+SKILL_MATCH_THRESHOLD = 0.6
 
 
 class SearchService:

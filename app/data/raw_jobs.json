@@ -1,28 +1,42 @@
 [
     {
-        "job_title": "Software Engineer",
-        "job_description": "Responsible for developing and maintaining software applications.",
+        "job_title": "Software Engineer (Mid-Level)",
+        "job_description": "CloudStart is seeking a passionate and talented mid-level Software Engineer to join our growing team in Seattle. You will be responsible for developing new features for our core SaaS product, writing clean and maintainable Python code, and collaborating with a cross-functional team of engineers, product managers, and designers. In this role, you'll contribute to our Flask-based backend, design and implement REST API endpoints, and help maintain our PostgreSQL database schema. We're looking for someone who is comfortable working in an agile environment and is eager to take ownership of their work and grow with the company.",
         "budget": {
-            "min": 70000,
-            "max": 90000,
+            "min": 115000,
+            "max": 140000,
             "currency": "USD"
         },
-        "location": "San Francisco, CA",
-        "company_name": "Tech Corp",
+        "location": "Seattle, WA, USA",
+        "company_name": "CloudStart",
         "employment_type": "Full-time",
-        "required_skills": [ "JavaScript", "Python", "Java" ]
+        "required_skills": [ "Python", "Flask", "PostgreSQL", "REST APIs", "Docker", "Git" ]
     },
     {
-        "job_title": "Data Engineer",
-        "job_description": "Design and optimize ETL pipelines with Spark, SQL, and Python in a cloud environment.",
+        "job_title": "Principal Product Manager, AI Platforms",
+        "job_description": "Global Innovators is searching for a world-class Principal Product Manager to define the future of our AI and machine learning platform. This is a highly strategic, individual contributor role for a seasoned product leader who can tackle complex and ambiguous challenges. You will be responsible for the long-term vision and strategy for a new business unit, working to translate cutting-edge technology into valuable customer solutions. You will influence stakeholders across the entire organization, from engineering leadership to the executive team, and will be a key voice in the company's most important technical decisions.",
         "budget": {
-            "min": 100000,
-            "max": 130000,
+            "min": 220000,
+            "max": 280000,
             "currency": "USD"
         },
-        "location": "New York, NY",
-        "company_name": "DataWorks",
+        "location": "New York, NY, USA",
+        "company_name": "Global Innovators",
         "employment_type": "Full-time",
-        "required_skills": [ "Spark", "SQL", "Python", "AWS" ]
+        "required_skills": [ "Product Strategy", "Product Vision", "Cross-functional Leadership", "Market Analysis", "AI/ML Products", "Public Speaking", "Stakeholder Alignment" ]
+    },
+    {
+        "job_title": "Sales Development Representative (Junior)",
+        "job_description": "Fintech Nigeria is looking for an ambitious and energetic Junior Sales Development Representative to join our fast-growing sales team in Lagos. This is an entry-level position perfect for someone looking to start a career in technology sales. You will be responsible for generating new business opportunities by prospecting into mid-market accounts. Your daily activities will include cold calling, email prospecting, and social selling to qualify leads and set appointments for our Account Executives. We provide extensive training and a clear path for career progression.",
+        "budget": {
+            "min": 50000,
+            "max": 65000,
+            "currency": "USD"
+        },
+        "location": "Lagos, Nigeria",
+        "company_name": "Fintech Nigeria",
+        "employment_type": "Full-time",
+        "required_skills": [ "Lead Generation", "Cold Calling", "Communication", "CRM", "Salesforce", "Prospecting" ]
     }
 ]
+
